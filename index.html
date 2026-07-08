@@ -2,6 +2,9 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>✨ KHẢO BÀI TỪ VỰNG ✨</title>
 
 <style>
@@ -88,7 +91,7 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG EXTRA READING (LẦN 1) ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG EXTRA READING (LẦN 2) ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
@@ -131,254 +134,154 @@ function shuffle(arr){
 // 📚 DATA
 let originalQuestions = [ 
 {
-  q: "mediocrity means ________.",
-  a: ["sự tầm thường", "sự kiên trì", "sự xuất sắc", "sự giàu có"],
+  q: "Every guest staying at the hotel is offered a ______ breakfast at no extra cost.",
+  a: ["complementary", "complimentary", "compliment", "complement"],
+  c: 1
+},
+{
+  q: "Air is ______ for human survival. Without it, we cannot live.",
+  a: ["superficial", "indispensable", "impulsive", "elaborate"],
+  c: 1
+},
+{
+  q: "The teacher gave Jenny a ______ for her excellent presentation in front of the class.",
+  a: ["complement", "compliment", "complementary", "gratitude"],
+  c: 1
+},
+{
+  q: "You shouldn't eat too much ______ because it increases the risk of heart disease.",
+  a: ["refined sugar", "saturated fat", "perseverance", "novelty"],
+  c: 1
+},
+{
+  q: "Success is impossible without ______. No matter how talented you are, you must keep trying.",
+  a: ["novelty", "perseverance", "gratification", "discernment"],
+  c: 1
+},
+{
+  q: "The final football match became extremely ______ after both teams scored in the last five minutes.",
+  a: ["superficial", "intense", "holistic", "delayed"],
+  c: 1
+},
+{
+  q: "Strong winds are expected to ______ the wildfire throughout the national park.",
+  a: ["articulate", "intensify", "resonate", "designate"],
+  c: 1
+},
+{
+  q: "Many people ______ challenges because they believe difficulties help them grow.",
+  a: ["embrace", "vacate", "savor", "dictate"],
   c: 0
 },
 {
-  q: "prominent means ________.",
-  a: ["nổi bật", "yếu ớt", "khiêm tốn", "mơ hồ"],
+  q: "Before publishing the article, the editor carefully ______ every detail for possible mistakes.",
+  a: ["embraced", "scrutinized", "savored", "designated"],
+  c: 1
+},
+{
+  q: "The professor was able to ______ difficult scientific concepts in a way that everyone could understand.",
+  a: ["dictate", "articulate", "cultivate", "vacate"],
+  c: 1
+},
+{
+  q: "There are currently three job ______ in our sales department.",
+  a: ["novelties", "vacancies", "gratifications", "complements"],
+  c: 1
+},
+{
+  q: "Her encouraging words ______ me to apply for an overseas scholarship.",
+  a: ["prompted", "resonated", "vacated", "embraced"],
   c: 0
 },
 {
-  q: "eminent means ________.",
-  a: ["nổi tiếng, lỗi lạc", "nguy hiểm", "nghèo khó", "cũ kỹ"],
+  q: "The government ______ the importance of renewable energy in its latest report.",
+  a: ["savored", "underscored", "accumulated", "complimented"],
+  c: 1
+},
+{
+  q: "After years of research, the scientist decided to ______ a completely new project.",
+  a: ["undertake", "indulge", "dictate", "mistake"],
   c: 0
 },
 {
-  q: "account (v) means ________.",
-  a: ["chiếm", "từ chối", "thay thế", "cải thiện"],
+  q: "Her creativity and leadership skills ______ her ______ the other candidates.",
+  a: ["mistook / for", "set / apart from", "prompted / to", "resonated / with"],
+  c: 1
+},
+{
+  q: 'The word "indispensable" is closest in meaning to ______.',
+  a: ["không thể thiếu", "hời hợt", "độc quyền", "trì hoãn"],
   c: 0
 },
 {
-  q: "account for means ________.",
-  a: ["giải thích cho; chiếm", "phản đối", "trì hoãn", "che giấu"],
+  q: 'The word "superficial" is closest in meaning to ______.',
+  a: ["toàn diện", "hời hợt", "vô giá", "kiên trì"],
+  c: 1
+},
+{
+  q: 'The word "holistic" is closest in meaning to ______.',
+  a: ["toàn diện", "bốc đồng", "miễn phí", "chính xác"],
   c: 0
 },
 {
-  q: "devoted means ________.",
-  a: ["tận tâm", "thất vọng", "nghi ngờ", "bối rối"],
+  q: 'The word "valuable" is closest in meaning to ______.',
+  a: ["vô giá", "có giá trị", "miễn phí", "được chỉ định"],
+  c: 1
+},
+{
+  q: 'The words "invaluable / priceless" are closest in meaning to ______.',
+  a: ["có giá trị", "vô giá", "không đáng giá", "miễn phí"],
+  c: 1
+},
+{
+  q: 'The word "gratification" is closest in meaning to ______.',
+  a: ["sự trì hoãn", "sự hài lòng, thỏa mãn", "sự sáng suốt", "sự bổ sung"],
+  c: 1
+},
+{
+  q: 'The word "discernment" is closest in meaning to ______.',
+  a: ["sự sáng suốt", "sự đổi mới", "sự kiên trì", "sự miễn phí"],
   c: 0
 },
 {
-  q: "dedicated means ________.",
-  a: ["tận tụy", "liều lĩnh", "bướng bỉnh", "cô đơn"],
+  q: 'The word "novelty" is closest in meaning to ______.',
+  a: ["sự đổi mới", "sự trì hoãn", "lời khen", "phần bổ sung"],
   c: 0
 },
 {
-  q: "committed means ________.",
-  a: ["tận tâm, cam kết", "tức giận", "sợ hãi", "tham lam"],
+  q: 'The word "designate" is closest in meaning to ______.',
+  a: ["chỉ định", "kiểm tra kỹ", "nuôi dưỡng", "trì hoãn"],
   c: 0
 },
 {
-  q: "collective effort means ________.",
-  a: ["nỗ lực tập thể", "nỗ lực cá nhân", "cuộc tranh luận", "sự phản đối"],
-  c: 0
+  q: 'The word "vacated" is closest in meaning to ______.',
+  a: ["được xây dựng", "rời bỏ (vị trí/toà nhà)", "được bổ nhiệm", "được khen"],
+  c: 1
 },
 {
-  q: "dissect means ________.",
-  a: ["phân tích kỹ", "phá hủy", "bỏ qua", "sao chép"],
-  c: 0
+  q: 'The word "cultivate" is closest in meaning to ______.',
+  a: ["loại bỏ", "nuôi dưỡng, trau dồi", "cộng hưởng", "tăng tốc"],
+  c: 1
 },
 {
-  q: "fluid means ________.",
-  a: ["linh hoạt", "cứng nhắc", "khắc nghiệt", "tạm thời"],
-  c: 0
+  q: 'The phrase "means of" is closest in meaning to ______.',
+  a: ["kết quả của", "phương thức của", "nguyên nhân của", "ví dụ của"],
+  c: 1
 },
 {
-  q: "conviction means ________.",
-  a: ["niềm tin vững chắc", "sự nghi ngờ", "sự lo lắng", "sự ganh tị"],
-  c: 0
+  q: 'The phrase "savor a cup of tea" is closest in meaning to ______.',
+  a: ["pha trà", "nhâm nhi một tách trà", "mua trà", "rót trà"],
+  c: 1
 },
 {
-  q: "solitude means ________.",
-  a: ["sự cô độc", "sự náo nhiệt", "sự hợp tác", "sự tiến bộ"],
-  c: 0
+  q: 'The phrase "mistake A for B" is closest in meaning to ______.',
+  a: ["thay thế A bằng B", "nhầm A với B", "so sánh A với B", "chọn A hơn B"],
+  c: 1
 },
 {
-  q: "aesthetic means ________.",
-  a: ["thẩm mỹ", "kinh tế", "y tế", "pháp lý"],
-  c: 0
-},
-{
-  q: "crave means ________.",
-  a: ["khao khát", "từ chối", "né tránh", "ngăn cản"],
-  c: 0
-},
-{
-  q: "amidst means ________.",
-  a: ["giữa", "ngoài", "sau", "trước"],
-  c: 0
-},
-{
-  q: "harsh means ________.",
-  a: ["khắc nghiệt", "mềm mại", "yên tĩnh", "thanh lịch"],
-  c: 0
-},
-{
-  q: "navigating means ________.",
-  a: ["điều hướng; giải quyết", "từ bỏ", "lãng phí", "mô phỏng"],
-  c: 0
-},
-{
-  q: "expire means ________.",
-  a: ["hết hạn", "gia hạn", "cải thiện", "xuất hiện"],
-  c: 0
-},
-{
-  q: "extend means ________.",
-  a: ["gia hạn", "rút ngắn", "hủy bỏ", "từ chối"],
-  c: 0
-},
-{
-  q: "criticize means ________.",
-  a: ["chỉ trích", "ca ngợi", "bảo vệ", "động viên"],
-  c: 0
-},
-{
-  q: "ensure means ________.",
-  a: ["đảm bảo", "nghi ngờ", "trì hoãn", "phản đối"],
-  c: 0
-},
-{
-  q: "dynamic means ________.",
-  a: ["năng động", "đơn điệu", "cứng nhắc", "yếu đuối"],
-  c: 0
-},
-{
-  q: "resilience means ________.",
-  a: ["khả năng phục hồi", "sự thất vọng", "sự giàu có", "sự kiêu ngạo"],
-  c: 0
-},
-{
-  q: "complement (v) means ________.",
-  a: ["bổ sung, hỗ trợ", "chỉ trích", "cản trở", "phá hủy"],
-  c: 0
-},
-{
-  q: "complementary means ________.",
-  a: ["mang tính bổ sung", "miễn phí", "đắt đỏ", "hiếm gặp"],
-  c: 0
-},
-{
-  q: "complimentary means ________.",
-  a: ["miễn phí", "bổ sung", "tạm thời", "bất hợp pháp"],
-  c: 0
-},
-{
-  q: "compliment (n/v) means ________.",
-  a: ["lời khen; khen", "lời phàn nàn; phàn nàn", "lời xin lỗi; xin lỗi", "lời cảnh báo; cảnh báo"],
-  c: 0
-},
-{
-  q: "deploy means ________.",
-  a: ["triển khai", "thu hồi", "trì hoãn", "hủy bỏ"],
-  c: 0
-},
-{
-  q: "pay attention to means ________.",
-  a: ["chú ý đến", "phụ thuộc vào", "phản đối", "chịu đựng"],
-  c: 0
-},
-{
-  q: "focus on means ________.",
-  a: ["tập trung vào", "tránh xa", "từ bỏ", "thay thế"],
-  c: 0
-},
-{
-  q: "take notice of means ________.",
-  a: ["để ý đến", "bỏ qua", "chống lại", "che giấu"],
-  c: 0
-},
-{
-  q: "attract someone's attention means ________.",
-  a: ["thu hút sự chú ý của ai", "làm ai thất vọng", "khiến ai tức giận", "làm ai xấu hổ"],
-  c: 0
-},
-{
-  q: "invent a story means ________.",
-  a: ["bịa chuyện", "kể lại chuyện", "dịch chuyện", "ghi chép chuyện"],
-  c: 0
-},
-{
-  q: "contribute means ________.",
-  a: ["đóng góp", "phân phát", "quy cho", "trì hoãn"],
-  c: 0
-},
-{
-  q: "distribute means ________.",
-  a: ["phân phát", "đóng góp", "thu hồi", "cải thiện"],
-  c: 0
-},
-{
-  q: "attribute a to b means ________.",
-  a: ["quy A là do B", "thay A bằng B", "tách A khỏi B", "so sánh A với B"],
-  c: 0
-},
-{
-  q: "brave means ________.",
-  a: ["dũng cảm", "ích kỷ", "nhút nhát", "tham lam"],
-  c: 0
-},
-{
-  q: "courageous means ________.",
-  a: ["dũng cảm", "tức giận", "lười biếng", "khôn ngoan"],
-  c: 0
-},
-{
-  q: "bold means ________.",
-  a: ["táo bạo, dũng cảm", "yếu đuối", "nhút nhát", "buồn chán"],
-  c: 0
-},
-{
-  q: "conduct a survey means ________.",
-  a: ["tiến hành khảo sát", "hủy cuộc khảo sát", "sao chép khảo sát", "từ chối khảo sát"],
-  c: 0
-},
-{
-  q: "implement a law means ________.",
-  a: ["thực hiện, ban hành luật", "phản đối luật", "xóa bỏ luật", "sửa luật"],
-  c: 0
-},
-{
-  q: "prosperous means ________.",
-  a: ["thịnh vượng", "nghèo khó", "nguy hiểm", "cô đơn"],
-  c: 0
-},
-{
-  q: "affluent means ________.",
-  a: ["giàu có", "nổi tiếng", "kiên nhẫn", "bình thường"],
-  c: 0
-},
-{
-  q: "flourishing means ________.",
-  a: ["phát triển thịnh vượng", "suy giảm", "trì trệ", "cạn kiệt"],
-  c: 0
-},
-{
-  q: "prominent is closest in meaning to ________.",
-  a: ["eminent", "mediocre", "harsh", "fluid"],
-  c: 0
-},
-{
-  q: "crave is closest in meaning to ________.",
-  a: ["desire", "reject", "delay", "ignore"],
-  c: 0
-},
-{
-  q: "aesthetic is closest in meaning to ________.",
-  a: ["artistic", "financial", "medical", "scientific"],
-  c: 0
-},
-{
-  q: "prosperous is closest in meaning to ________.",
-  a: ["affluent", "harsh", "mediocre", "solitary"],
-  c: 0
-},
-{
-  q: "resilience is closest in meaning to ________.",
-  a: ["the ability to recover quickly", "weakness", "hesitation", "criticism"],
-  c: 0
+  q: 'The phrase "pay off" is closest in meaning to ______.',
+  a: ["gây thất vọng", "đền đáp, mang lại kết quả xứng đáng", "trì hoãn", "nhấn mạnh"],
+  c: 1
 }
 ];
 
@@ -476,10 +379,55 @@ if(hasEmpty){
   let now = new Date().toLocaleString();
 
   // hiển thị
-  document.getElementById("result").innerHTML =
-    `🎉 ${name} đúng ${score}/${questions.length}<br>
-     ⏰ ${now}<br>
-     ⚠️ TabSwitch: ${tabSwitchCount || 0}`;
+  let wrongRate = wrongList.length / questions.length;
+
+let resultHTML = `
+🎉 <b>${name}</b> đúng <b>${score}/${questions.length}</b><br>
+⏰ ${now}<br>
+⚠️ TabSwitch: ${tabSwitchCount || 0}<br><br>
+`;
+
+if(wrongRate < 0.3){
+
+    resultHTML += `
+    <h3>📚 Đáp án các câu sai</h3>
+    `;
+
+    wrongList.forEach((w,i)=>{
+        resultHTML += `
+        <div style="
+            border:1px solid #ddd;
+            padding:10px;
+            margin-bottom:10px;
+            border-radius:10px;
+            background:#fff8e6;
+        ">
+            <b>Câu ${i+1}</b><br>
+            ${w.question}<br><br>
+
+            ❌ Bạn chọn: <span style="color:red">${w.your}</span><br>
+            ✅ Đáp án: <span style="color:green">${w.correct}</span>
+        </div>
+        `;
+    });
+
+}else{
+
+    resultHTML += `
+    <div style="
+        background:#ffeaea;
+        padding:15px;
+        border-radius:12px;
+        color:#c00000;
+        font-weight:bold;
+    ">
+    ❌ Sai trên 30% mà đòi mấy đáp án của mẹ hả cưng?<br>
+    Học bài kỹ vô bữa sau mẹ khảo lại!
+    </div>
+    `;
+}
+
+document.getElementById("result").innerHTML = resultHTML;
 
   // ⭐ GỬI DATA FULL
   fetch("https://script.google.com/macros/s/AKfycbwKGHpjJy1RxNpGRIHdZtQiPfCrh0OSG24DEzQtRB7Ezlr1aki97aZL0JfQiSwkKmYmrg/exec",{
