@@ -91,7 +91,7 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG EXTRA READING (LẦN 2) ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG VOCAB UNIT 2 (LẦN 1) ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
@@ -134,154 +134,204 @@ function shuffle(arr){
 // 📚 DATA
 let originalQuestions = [ 
 {
-  q: "Every guest staying at the hotel is offered a ______ breakfast at no extra cost.",
-  a: ["complementary", "complimentary", "compliment", "complement"],
+  q: "The phrase <b>all over the globe</b> most nearly means ______.",
+  a: ["ở ngoài không gian", "trên toàn thế giới", "quanh một thành phố", "dưới lòng đất"],
   c: 1
 },
 {
-  q: "Air is ______ for human survival. Without it, we cannot live.",
-  a: ["superficial", "indispensable", "impulsive", "elaborate"],
-  c: 1
+  q: "The phrase <b>on a global scale</b> means ______.",
+  a: ["trong phạm vi địa phương", "ở cấp độ cá nhân", "trên quy mô toàn cầu", "trong phạm vi khu vực"],
+  c: 2
 },
 {
-  q: "The teacher gave Jenny a ______ for her excellent presentation in front of the class.",
-  a: ["complement", "compliment", "complementary", "gratitude"],
-  c: 1
+  q: "The phrase <b>a rich diversity of cultures</b> means ______.",
+  a: ["một nền văn hóa cổ", "sự pha trộn văn hóa", "sự đa dạng văn hóa", "một nền văn hóa thống nhất"],
+  c: 2
 },
 {
-  q: "You shouldn't eat too much ______ because it increases the risk of heart disease.",
-  a: ["refined sugar", "saturated fat", "perseverance", "novelty"],
-  c: 1
-},
-{
-  q: "Success is impossible without ______. No matter how talented you are, you must keep trying.",
-  a: ["novelty", "perseverance", "gratification", "discernment"],
-  c: 1
-},
-{
-  q: "The final football match became extremely ______ after both teams scored in the last five minutes.",
-  a: ["superficial", "intense", "holistic", "delayed"],
-  c: 1
-},
-{
-  q: "Strong winds are expected to ______ the wildfire throughout the national park.",
-  a: ["articulate", "intensify", "resonate", "designate"],
-  c: 1
-},
-{
-  q: "Many people ______ challenges because they believe difficulties help them grow.",
-  a: ["embrace", "vacate", "savor", "dictate"],
+  q: "The phrase <b>cultural diversity</b> means ______.",
+  a: ["đa dạng văn hóa", "bản sắc dân tộc", "di sản văn hóa", "giao lưu văn hóa"],
   c: 0
 },
 {
-  q: "Before publishing the article, the editor carefully ______ every detail for possible mistakes.",
-  a: ["embraced", "scrutinized", "savored", "designated"],
-  c: 1
+  q: "The term <b>biodiversity</b> refers to ______.",
+  a: ["đa dạng địa lý", "đa dạng dân số", "đa dạng sinh học", "đa dạng ngôn ngữ"],
+  c: 2
 },
 {
-  q: "The professor was able to ______ difficult scientific concepts in a way that everyone could understand.",
-  a: ["dictate", "articulate", "cultivate", "vacate"],
-  c: 1
-},
-{
-  q: "There are currently three job ______ in our sales department.",
-  a: ["novelties", "vacancies", "gratifications", "complements"],
-  c: 1
-},
-{
-  q: "Her encouraging words ______ me to apply for an overseas scholarship.",
-  a: ["prompted", "resonated", "vacated", "embraced"],
+  q: "The phrase <b>religious beliefs</b> means ______.",
+  a: ["tín ngưỡng tôn giáo", "nghi lễ tôn giáo", "tổ chức tôn giáo", "niềm tin mạnh mẽ"],
   c: 0
 },
 {
-  q: "The government ______ the importance of renewable energy in its latest report.",
-  a: ["savored", "underscored", "accumulated", "complimented"],
-  c: 1
-},
-{
-  q: "After years of research, the scientist decided to ______ a completely new project.",
-  a: ["undertake", "indulge", "dictate", "mistake"],
+  q: "The idiom <b>beyond belief</b> means ______.",
+  a: ["khó tin đến mức không thể tin nổi", "đáng để suy nghĩ", "rất hợp lý", "hoàn toàn chính xác"],
   c: 0
 },
 {
-  q: "Her creativity and leadership skills ______ her ______ the other candidates.",
-  a: ["mistook / for", "set / apart from", "prompted / to", "resonated / with"],
-  c: 1
-},
-{
-  q: 'The word "indispensable" is closest in meaning to ______.',
-  a: ["không thể thiếu", "hời hợt", "độc quyền", "trì hoãn"],
+  q: "The adjective <b>plausible</b> means ______.",
+  a: ["hợp lý, có vẻ đáng tin", "phi lý", "đáng sợ", "khó hiểu"],
   c: 0
 },
 {
-  q: 'The word "superficial" is closest in meaning to ______.',
-  a: ["toàn diện", "hời hợt", "vô giá", "kiên trì"],
-  c: 1
+  q: "The verb <b>customize</b> means ______.",
+  a: ["tiêu chuẩn hóa", "sản xuất hàng loạt", "tùy chỉnh theo yêu cầu", "nhập khẩu"],
+  c: 2
 },
 {
-  q: 'The word "holistic" is closest in meaning to ______.',
-  a: ["toàn diện", "bốc đồng", "miễn phí", "chính xác"],
+  q: "The adjective <b>customary</b> means ______.",
+  a: ["theo thông lệ, tập quán", "mang tính hiện đại", "mang tính truyền thống cổ xưa", "hiếm gặp"],
   c: 0
 },
 {
-  q: 'The word "valuable" is closest in meaning to ______.',
-  a: ["vô giá", "có giá trị", "miễn phí", "được chỉ định"],
+  q: "The structure <b>respect somebody for something</b> means ______.",
+  a: ["tranh luận với ai về điều gì", "tôn trọng ai vì điều gì", "giúp ai làm điều gì", "trách ai vì điều gì"],
   c: 1
 },
 {
-  q: 'The words "invaluable / priceless" are closest in meaning to ______.',
-  a: ["có giá trị", "vô giá", "không đáng giá", "miễn phí"],
-  c: 1
-},
-{
-  q: 'The word "gratification" is closest in meaning to ______.',
-  a: ["sự trì hoãn", "sự hài lòng, thỏa mãn", "sự sáng suốt", "sự bổ sung"],
-  c: 1
-},
-{
-  q: 'The word "discernment" is closest in meaning to ______.',
-  a: ["sự sáng suốt", "sự đổi mới", "sự kiên trì", "sự miễn phí"],
+  q: "The phrase <b>in many respects</b> means ______.",
+  a: ["trong nhiều khía cạnh", "ở nhiều quốc gia", "trong nhiều năm", "nhiều lần"],
   c: 0
 },
 {
-  q: 'The word "novelty" is closest in meaning to ______.',
-  a: ["sự đổi mới", "sự trì hoãn", "lời khen", "phần bổ sung"],
+  q: "The phrase <b>hands-on experience</b> means ______.",
+  a: ["kinh nghiệm thực tế", "kinh nghiệm lý thuyết", "kinh nghiệm giảng dạy", "kinh nghiệm quản lý"],
   c: 0
 },
 {
-  q: 'The word "designate" is closest in meaning to ______.',
-  a: ["chỉ định", "kiểm tra kỹ", "nuôi dưỡng", "trì hoãn"],
+  q: "The idiom <b>put it down to experience</b> means ______.",
+  a: ["coi đó là bài học kinh nghiệm", "ghi chép kinh nghiệm", "chia sẻ kinh nghiệm", "mô tả trải nghiệm"],
   c: 0
 },
 {
-  q: 'The word "vacated" is closest in meaning to ______.',
-  a: ["được xây dựng", "rời bỏ (vị trí/toà nhà)", "được bổ nhiệm", "được khen"],
+  q: "The structure <b>encourage somebody to do something</b> means ______.",
+  a: ["bắt ai làm gì", "cho phép ai làm gì", "khuyến khích ai làm gì", "nhờ ai làm gì"],
+  c: 2
+},
+{
+  q: "The adjective <b>encouraging</b> means ______.",
+  a: ["đầy hứa hẹn, đáng khích lệ", "đáng thất vọng", "nguy hiểm", "khó hiểu"],
+  c: 0
+},
+{
+  q: "The adjective <b>courageous</b> means ______.",
+  a: ["thông minh", "can đảm", "kiên nhẫn", "khiêm tốn"],
   c: 1
 },
 {
-  q: 'The word "cultivate" is closest in meaning to ______.',
-  a: ["loại bỏ", "nuôi dưỡng, trau dồi", "cộng hưởng", "tăng tốc"],
+  q: "The phrase <b>on special</b> means ______.",
+  a: ["đang được giảm giá", "rất đặc biệt", "giới hạn số lượng", "bán độc quyền"],
+  c: 0
+},
+{
+  q: "The noun <b>specialty</b> means ______.",
+  a: ["món ăn đặc sản hoặc chuyên môn", "ưu điểm", "sở thích", "nghề nghiệp"],
+  c: 0
+},
+{
+  q: "The structure <b>specialize in something</b> means ______.",
+  a: ["nghiên cứu về", "chuyên về", "nổi tiếng vì", "quan tâm đến"],
   c: 1
 },
 {
-  q: 'The phrase "means of" is closest in meaning to ______.',
-  a: ["kết quả của", "phương thức của", "nguyên nhân của", "ví dụ của"],
+  q: "The adverb <b>especially</b> means ______.",
+  a: ["đặc biệt là", "hiếm khi", "gần như", "hoàn toàn"],
+  c: 0
+},
+{
+  q: "The adjective <b>captivated</b> means ______.",
+  a: ["bị cuốn hút, mê hoặc", "rất lo lắng", "hoàn toàn thất vọng", "cực kỳ tức giận"],
+  c: 0
+},
+{
+  q: "The structure <b>present something to somebody</b> means ______.",
+  a: ["trình bày hoặc trao cái gì cho ai", "mượn cái gì từ ai", "bán cái gì cho ai", "giữ cái gì cho ai"],
+  c: 0
+},
+{
+  q: "The adjective <b>present</b> means ______.",
+  a: ["có mặt", "hiện tại", "món quà", "trình bày"],
+  c: 0
+},
+{
+  q: "The verb <b>represent</b> means ______.",
+  a: ["phản đối", "đại diện cho", "hỗ trợ", "tham gia"],
   c: 1
 },
 {
-  q: 'The phrase "savor a cup of tea" is closest in meaning to ______.',
-  a: ["pha trà", "nhâm nhi một tách trà", "mua trà", "rót trà"],
+  q: "The phrase <b>reflect on something</b> means ______.",
+  a: ["suy ngẫm về điều gì", "phản đối điều gì", "chỉ trích điều gì", "ghi nhớ điều gì"],
+  c: 0
+},
+{
+  q: "The verb <b>reflect</b> (light, image, etc.) means ______.",
+  a: ["hấp thụ", "phản chiếu", "che khuất", "làm mờ"],
   c: 1
 },
 {
-  q: 'The phrase "mistake A for B" is closest in meaning to ______.',
-  a: ["thay thế A bằng B", "nhầm A với B", "so sánh A với B", "chọn A hơn B"],
+  q: "The phrase <b>on reflection</b> means ______.",
+  a: ["sau khi suy nghĩ kỹ lại", "ngay lập tức", "theo ý kiến cá nhân", "trong tương lai"],
+  c: 0
+},
+{
+  q: "The phrase <b>filthy rich</b> means ______.",
+  a: ["cực kỳ giàu có", "rất keo kiệt", "rất nghèo", "rất nổi tiếng"],
+  c: 0
+},
+{
+  q: "The phrase <b>a wealth of information</b> means ______.",
+  a: ["một lượng thông tin phong phú", "thông tin bí mật", "nguồn thông tin sai lệch", "tài liệu lưu trữ"],
+  c: 0
+},
+{
+  q: "The structure <b>express one's opinion</b> means ______.",
+  a: ["bảo vệ quan điểm", "thay đổi quan điểm", "bày tỏ ý kiến", "giấu ý kiến"],
+  c: 2
+},
+{
+  q: "The noun <b>facial expression</b> means ______.",
+  a: ["biểu cảm khuôn mặt", "sự bày tỏ", "cử chỉ tay", "ngôn ngữ cơ thể"],
+  c: 0
+},
+{
+  q: "The verb <b>identify</b> means ______.",
+  a: ["xác định", "thay thế", "so sánh", "tách"],
+  c: 0
+},
+{
+  q: "The phrase <b>strengths and weaknesses</b> means ______.",
+  a: ["điểm mạnh và điểm yếu", "thắng và thua", "lợi ích và chi phí", "quyền lợi và nghĩa vụ"],
+  c: 0
+},
+{
+  q: "The structure <b>be appreciative of something</b> means ______.",
+  a: ["phụ thuộc vào điều gì", "biết ơn, trân trọng điều gì", "phản đối điều gì", "lo lắng về điều gì"],
   c: 1
 },
 {
-  q: 'The phrase "pay off" is closest in meaning to ______.',
-  a: ["gây thất vọng", "đền đáp, mang lại kết quả xứng đáng", "trì hoãn", "nhấn mạnh"],
+  q: "The word <b>distinguish</b> means ______.",
+  a: ["tách biệt", "phân biệt", "hiểu rõ", "giống nhau"],
   c: 1
+},
+{
+  q: "The word <b>identical</b> means ______.",
+  a: ["giống hệt nhau", "danh tính", "sự xác minh danh tính", "căn cước công dân"],
+  c: 0
+},
+{
+  q: "The phrase <b>take after</b> means ______.",
+  a: ["giống nhau", "chăm sóc", "hỗ trợ", "phân biệt"],
+  c: 0
+},
+{
+  q: "The word <b>respectable</b> means ______.",
+  a: ["tôn trọng", "lễ phép", "đáng kính", "tương ứng"],
+  c: 2
+},
+{
+  q: "The word <b>respectful</b> means ______.",
+  a: ["lễ phép, tôn trọng", "đáng kính", "liên tiếp", "tương ứng"],
+  c: 0
 }
 ];
 
@@ -304,7 +354,7 @@ questions.forEach((q,i)=>{
   let div=document.createElement("div");
   div.className="question";
 
-  let html=`<b>${i+1}. ${q.q}</b>`;
+  let html=`${i+1}. ${q.q}`;
 
   q.a.forEach((ans,idx)=>{
     html+=`
