@@ -91,7 +91,7 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG VOCAB UNIT 2 (LẦN 1) ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG UNIT 2 (YOU'RE COOKED 😈) ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
@@ -134,203 +134,253 @@ function shuffle(arr){
 // 📚 DATA
 let originalQuestions = [ 
 {
-  q: "The phrase <b>all over the globe</b> most nearly means ______.",
-  a: ["ở ngoài không gian", "trên toàn thế giới", "quanh một thành phố", "dưới lòng đất"],
+  q: "Although Jason studies very hard, he sometimes feels ______ when comparing himself with students who always get higher scores.",
+  a: ["superior", "inferior", "identical", "original"],
   c: 1
 },
 {
-  q: "The phrase <b>on a global scale</b> means ______.",
-  a: ["trong phạm vi địa phương", "ở cấp độ cá nhân", "trên quy mô toàn cầu", "trong phạm vi khu vực"],
+  q: "Students who spend too much time playing online games are more ______ poor eyesight.",
+  a: ["representative of", "vulnerable to", "respectful of", "appreciative of"],
+  c: 1
+},
+{
+  q: "Some newspapers intentionally ______ the facts in order to attract more readers.",
+  a: ["distort", "undergo", "yield", "identify"],
+  c: 0
+},
+{
+  q: "Parents should encourage their children to build strong ______ by praising their efforts instead of only their achievements.",
+  a: ["identity", "self-esteem", "reflection", "specialty"],
+  c: 1
+},
+{
+  q: "The manager replied to the email ______ the issue you reported yesterday.",
+  a: ["regarding", "despite", "beyond", "throughout"],
+  c: 0
+},
+{
+  q: "The new farming method can ______ more rice while using less water.",
+  a: ["reflect", "yield", "undergo", "customize"],
+  c: 1
+},
+{
+  q: "Every new employee must ______ a two-week training course before starting work.",
+  a: ["gain traction", "undergo", "represent", "distinguish"],
+  c: 1
+},
+{
+  q: "Electric cars have recently ______ because more charging stations have been built.",
+  a: ["taken over", "gained traction", "put down", "reflected"],
+  c: 1
+},
+{
+  q: "This painting is the ______ work created by the artist, not a copy.",
+  a: ["expressive", "original", "identical", "representative"],
+  c: 1
+},
+{
+  q: "Young children often ______ their parents' behavior without realizing it.",
+  a: ["distort", "imitate", "strengthen", "appreciate"],
+  c: 1
+},
+{
+  q: "Many successful athletes hope to ______ Olympic champions rather than simply copy their actions.",
+  a: ["emulate", "customize", "identify", "present"],
+  c: 0
+},
+{
+  q: "The company offered a generous bonus as an ______ for employees to work harder.",
+  a: ["specialty", "incentive", "experience", "reflection"],
+  c: 1
+},
+{
+  q: "Her creativity is what ______ from the other designers in the company.",
+  a: ["results in her", "sets her apart", "results from her", "takes over her"],
+  c: 1
+},
+{
+  q: "Many English words are ______ Latin.",
+  a: ["taking over", "stemming from", "resulting in", "reflecting on"],
+  c: 1
+},
+{
+  q: "The heavy rain ______ serious flooding in several villages.",
+  a: ["resulted from", "resulted in", "took after", "derived from"],
+  c: 1
+},
+{
+  q: "Mr. Nam really ______ Son Tung. They have the same smile and personality.",
+  a: ["takes on", "takes after", "takes over", "takes in"],
+  c: 1
+},
+{
+  q: "Many people find it difficult to ______ fake products from genuine ones.",
+  a: ["undergo", "distinguish", "yield", "represent"],
+  c: 1
+},
+{
+  q: "The hospital plans to ______ twenty new nurses before the end of the year.",
+  a: ["employ", "distort", "undergo", "customize"],
+  c: 0
+},
+{
+  q: "The traffic accident ______ the driver's carelessness on the wet road.",
+  a: ["resulted in", "resulted from", "took over", "yielded"],
+  c: 1
+},
+{
+  q: "People from all over the ______ visit this famous museum every year.",
+  a: ["globe", "scale", "custom", "identity"],
+  c: 0
+},
+{
+  q: "Air pollution has become a serious problem ______, so countries must work together to solve it.",
+  a: ["on special", "on a global scale", "beyond belief", "on reflection"],
+  c: 1
+},
+{
+  q: "The city is famous for its cultural ______, with people from many different ethnic groups living together peacefully.",
+  a: ["reflection", "diversity", "specialty", "popularity"],
+  c: 1
+},
+{
+  q: "National parks help protect ______ by providing a safe habitat for thousands of plant and animal species.",
+  a: ["biodiversity", "belief", "identity", "appreciation"],
+  c: 0
+},
+{
+  q: "The magician's performance was so amazing that it seemed ______.",
+  a: ["on special", "beyond belief", "on reflection", "with regard to"],
+  c: 1
+},
+{
+  q: "His excuse for arriving three hours late sounded so ______ that no one believed him.",
+  a: ["believable", "implausible", "appreciative", "reflective"],
+  c: 1
+},
+{
+  q: "Although the story was fictional, it was so ______ that many readers believed it had really happened.",
+  a: ["believable", "implausible", "expressionless", "inexperienced"],
+  c: 0
+},
+{
+  q: "It is our family ______ to have dinner together every Sunday evening.",
+  a: ["specialty", "custom", "incentive", "identity"],
+  c: 1
+},
+{
+  q: "Customers can ______ the color and design of the shoes before placing an order.",
+  a: ["represent", "customize", "strengthen", "identify"],
+  c: 1
+},
+{
+  q: "It is ______ in Japan to remove your shoes before entering someone's home.",
+  a: ["expressive", "customary", "appreciative", "original"],
+  c: 1
+},
+{
+  q: "Students should always show ______ their teachers and classmates.",
+  a: ["respect for", "appreciation to", "reflection on", "popularity with"],
+  c: 0
+},
+{
+  q: "Although Mr. Green is strict, he is a highly ______ teacher whom both students and parents admire.",
+  a: ["respectful", "respectable", "respective", "representative"],
+  c: 1
+},
+{
+  q: "Please return the completed forms to your ______ department managers before Friday.",
+  a: ["respectful", "respectable", "respective", "reflective"],
   c: 2
 },
 {
-  q: "The phrase <b>a rich diversity of cultures</b> means ______.",
-  a: ["một nền văn hóa cổ", "sự pha trộn văn hóa", "sự đa dạng văn hóa", "một nền văn hóa thống nhất"],
+  q: "Most companies prefer applicants who already have ______ instead of only classroom knowledge.",
+  a: ["hands-on experience", "presentation skills", "self-esteem", "encouragement"],
+  c: 0
+},
+{
+  q: "The company decided to hire an ______ engineer to lead the new project.",
+  a: ["experienced", "inexperienced", "expressive", "identical"],
+  c: 0
+},
+{
+  q: "Good teachers always ______ their students to ask questions and think independently.",
+  a: ["identify", "encourage", "distinguish", "reflect"],
+  c: 1
+},
+{
+  q: "This Korean drama is extremely popular ______ young audiences throughout Asia.",
+  a: ["to", "with", "by", "of"],
+  c: 1
+},
+{
+  q: "These laptops are ______ this weekend, so customers can save up to 30%.",
+  a: ["on reflection", "beyond belief", "on special", "on a global scale"],
   c: 2
 },
 {
-  q: "The phrase <b>cultural diversity</b> means ______.",
-  a: ["đa dạng văn hóa", "bản sắc dân tộc", "di sản văn hóa", "giao lưu văn hóa"],
-  c: 0
-},
-{
-  q: "The term <b>biodiversity</b> refers to ______.",
-  a: ["đa dạng địa lý", "đa dạng dân số", "đa dạng sinh học", "đa dạng ngôn ngữ"],
-  c: 2
-},
-{
-  q: "The phrase <b>religious beliefs</b> means ______.",
-  a: ["tín ngưỡng tôn giáo", "nghi lễ tôn giáo", "tổ chức tôn giáo", "niềm tin mạnh mẽ"],
-  c: 0
-},
-{
-  q: "The idiom <b>beyond belief</b> means ______.",
-  a: ["khó tin đến mức không thể tin nổi", "đáng để suy nghĩ", "rất hợp lý", "hoàn toàn chính xác"],
-  c: 0
-},
-{
-  q: "The adjective <b>plausible</b> means ______.",
-  a: ["hợp lý, có vẻ đáng tin", "phi lý", "đáng sợ", "khó hiểu"],
-  c: 0
-},
-{
-  q: "The verb <b>customize</b> means ______.",
-  a: ["tiêu chuẩn hóa", "sản xuất hàng loạt", "tùy chỉnh theo yêu cầu", "nhập khẩu"],
-  c: 2
-},
-{
-  q: "The adjective <b>customary</b> means ______.",
-  a: ["theo thông lệ, tập quán", "mang tính hiện đại", "mang tính truyền thống cổ xưa", "hiếm gặp"],
-  c: 0
-},
-{
-  q: "The structure <b>respect somebody for something</b> means ______.",
-  a: ["tranh luận với ai về điều gì", "tôn trọng ai vì điều gì", "giúp ai làm điều gì", "trách ai vì điều gì"],
+  q: "Italian food is the restaurant's ______, and many customers come just to try its homemade pasta.",
+  a: ["custom", "specialty", "incentive", "presentation"],
   c: 1
 },
 {
-  q: "The phrase <b>in many respects</b> means ______.",
-  a: ["trong nhiều khía cạnh", "ở nhiều quốc gia", "trong nhiều năm", "nhiều lần"],
+  q: "Dr. Brown has ______ environmental science for more than twenty years.",
+  a: ["specialized in", "resulted from", "taken after", "represented"],
   c: 0
 },
 {
-  q: "The phrase <b>hands-on experience</b> means ______.",
-  a: ["kinh nghiệm thực tế", "kinh nghiệm lý thuyết", "kinh nghiệm giảng dạy", "kinh nghiệm quản lý"],
-  c: 0
-},
-{
-  q: "The idiom <b>put it down to experience</b> means ______.",
-  a: ["coi đó là bài học kinh nghiệm", "ghi chép kinh nghiệm", "chia sẻ kinh nghiệm", "mô tả trải nghiệm"],
-  c: 0
-},
-{
-  q: "The structure <b>encourage somebody to do something</b> means ______.",
-  a: ["bắt ai làm gì", "cho phép ai làm gì", "khuyến khích ai làm gì", "nhờ ai làm gì"],
-  c: 2
-},
-{
-  q: "The adjective <b>encouraging</b> means ______.",
-  a: ["đầy hứa hẹn, đáng khích lệ", "đáng thất vọng", "nguy hiểm", "khó hiểu"],
-  c: 0
-},
-{
-  q: "The adjective <b>courageous</b> means ______.",
-  a: ["thông minh", "can đảm", "kiên nhẫn", "khiêm tốn"],
+  q: "This room was ______ decorated for the wedding ceremony.",
+  a: ["especially", "specially", "globally", "respectfully"],
   c: 1
 },
 {
-  q: "The phrase <b>on special</b> means ______.",
-  a: ["đang được giảm giá", "rất đặc biệt", "giới hạn số lượng", "bán độc quyền"],
+  q: "The movie was so ______ that nobody left the cinema until it ended.",
+  a: ["captivating", "respectable", "reflective", "identical"],
   c: 0
 },
 {
-  q: "The noun <b>specialty</b> means ______.",
-  a: ["món ăn đặc sản hoặc chuyên môn", "ưu điểm", "sở thích", "nghề nghiệp"],
-  c: 0
-},
-{
-  q: "The structure <b>specialize in something</b> means ______.",
-  a: ["nghiên cứu về", "chuyên về", "nổi tiếng vì", "quan tâm đến"],
+  q: "The manager will ______ the company's new marketing plan at tomorrow's meeting.",
+  a: ["represent", "present", "reflect", "identify"],
   c: 1
 },
 {
-  q: "The adverb <b>especially</b> means ______.",
-  a: ["đặc biệt là", "hiếm khi", "gần như", "hoàn toàn"],
-  c: 0
-},
-{
-  q: "The adjective <b>captivated</b> means ______.",
-  a: ["bị cuốn hút, mê hoặc", "rất lo lắng", "hoàn toàn thất vọng", "cực kỳ tức giận"],
-  c: 0
-},
-{
-  q: "The structure <b>present something to somebody</b> means ______.",
-  a: ["trình bày hoặc trao cái gì cho ai", "mượn cái gì từ ai", "bán cái gì cho ai", "giữ cái gì cho ai"],
-  c: 0
-},
-{
-  q: "The adjective <b>present</b> means ______.",
-  a: ["có mặt", "hiện tại", "món quà", "trình bày"],
-  c: 0
-},
-{
-  q: "The verb <b>represent</b> means ______.",
-  a: ["phản đối", "đại diện cho", "hỗ trợ", "tham gia"],
+  q: "The teacher's ______ in the classroom immediately made the students become quiet.",
+  a: ["absence", "presence", "identity", "reflection"],
   c: 1
 },
 {
-  q: "The phrase <b>reflect on something</b> means ______.",
-  a: ["suy ngẫm về điều gì", "phản đối điều gì", "chỉ trích điều gì", "ghi nhớ điều gì"],
+  q: "Our national flag ______ the history and spirit of the country.",
+  a: ["represents", "presents", "distinguishes", "undergoes"],
   c: 0
 },
 {
-  q: "The verb <b>reflect</b> (light, image, etc.) means ______.",
-  a: ["hấp thụ", "phản chiếu", "che khuất", "làm mờ"],
+  q: "When you look into calm water, it can ______ your face like a mirror.",
+  a: ["identify", "reflect", "encourage", "strengthen"],
   c: 1
 },
 {
-  q: "The phrase <b>on reflection</b> means ______.",
-  a: ["sau khi suy nghĩ kỹ lại", "ngay lập tức", "theo ý kiến cá nhân", "trong tương lai"],
-  c: 0
-},
-{
-  q: "The phrase <b>filthy rich</b> means ______.",
-  a: ["cực kỳ giàu có", "rất keo kiệt", "rất nghèo", "rất nổi tiếng"],
-  c: 0
-},
-{
-  q: "The phrase <b>a wealth of information</b> means ______.",
-  a: ["một lượng thông tin phong phú", "thông tin bí mật", "nguồn thông tin sai lệch", "tài liệu lưu trữ"],
-  c: 0
-},
-{
-  q: "The structure <b>express one's opinion</b> means ______.",
-  a: ["bảo vệ quan điểm", "thay đổi quan điểm", "bày tỏ ý kiến", "giấu ý kiến"],
-  c: 2
-},
-{
-  q: "The noun <b>facial expression</b> means ______.",
-  a: ["biểu cảm khuôn mặt", "sự bày tỏ", "cử chỉ tay", "ngôn ngữ cơ thể"],
-  c: 0
-},
-{
-  q: "The verb <b>identify</b> means ______.",
-  a: ["xác định", "thay thế", "so sánh", "tách"],
-  c: 0
-},
-{
-  q: "The phrase <b>strengths and weaknesses</b> means ______.",
-  a: ["điểm mạnh và điểm yếu", "thắng và thua", "lợi ích và chi phí", "quyền lợi và nghĩa vụ"],
-  c: 0
-},
-{
-  q: "The structure <b>be appreciative of something</b> means ______.",
-  a: ["phụ thuộc vào điều gì", "biết ơn, trân trọng điều gì", "phản đối điều gì", "lo lắng về điều gì"],
+  q: "The businessman became ______ after successfully building several technology companies.",
+  a: ["expressionless", "filthy rich", "appreciative", "believable"],
   c: 1
 },
 {
-  q: "The word <b>distinguish</b> means ______.",
-  a: ["tách biệt", "phân biệt", "hiểu rõ", "giống nhau"],
+  q: "The museum contains ______ information about Vietnamese history and culture.",
+  a: ["a wealth of", "a reflection of", "a respect for", "an identity of"],
+  c: 0
+},
+{
+  q: "Emma couldn't ______ the two twins because they looked almost identical.",
+  a: ["represent", "differentiate between", "undergo", "specialize in"],
   c: 1
 },
 {
-  q: "The word <b>identical</b> means ______.",
-  a: ["giống hệt nhau", "danh tính", "sự xác minh danh tính", "căn cước công dân"],
-  c: 0
+  q: "Although he rarely smiles, his face becomes very ______ whenever he talks about his children.",
+  a: ["expressionless", "expressive", "believable", "reflective"],
+  c: 1
 },
 {
-  q: "The phrase <b>take after</b> means ______.",
-  a: ["giống nhau", "chăm sóc", "hỗ trợ", "phân biệt"],
-  c: 0
-},
-{
-  q: "The word <b>respectable</b> means ______.",
-  a: ["tôn trọng", "lễ phép", "đáng kính", "tương ứng"],
-  c: 2
-},
-{
-  q: "The word <b>respectful</b> means ______.",
-  a: ["lễ phép, tôn trọng", "đáng kính", "liên tiếp", "tương ứng"],
+  q: "Professor Wilson is a ______ scientist whose research has received international recognition.",
+  a: ["distinguished", "respectful", "inexperienced", "original"],
   c: 0
 }
 ];
@@ -371,7 +421,7 @@ questions.forEach((q,i)=>{
 });
 
 // ⏱ timer
-let time=900;
+let time=1500;
 let timer=setInterval(()=>{
   let m=Math.floor(time/60);
   let s=time%60;
