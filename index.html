@@ -91,13 +91,13 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG UNIT 2 (YOU'RE COOKED 😈) ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG TOEIC ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
 </div>
 
-<div id="timer">⏳ 15:00</div>
+<div id="timer">⏳ 25:00</div>
 
 <div id="quiz"></div>
 
@@ -132,256 +132,406 @@ function shuffle(arr){
 }
 
 // 📚 DATA
-let originalQuestions = [ 
+let originalQuestions = [
 {
-  q: "Although Jason studies very hard, he sometimes feels ______ when comparing himself with students who always get higher scores.",
-  a: ["superior", "inferior", "identical", "original"],
-  c: 1
-},
-{
-  q: "Students who spend too much time playing online games are more ______ poor eyesight.",
-  a: ["representative of", "vulnerable to", "respectful of", "appreciative of"],
-  c: 1
-},
-{
-  q: "Some newspapers intentionally ______ the facts in order to attract more readers.",
-  a: ["distort", "undergo", "yield", "identify"],
+  q: "The ______ of this T-shirt is $20.",
+  a: [
+    "price",
+    "route",
+    "meal",
+    "platform"
+  ],
   c: 0
 },
 {
-  q: "Parents should encourage their children to build strong ______ by praising their efforts instead of only their achievements.",
-  a: ["identity", "self-esteem", "reflection", "specialty"],
+  q: "The repair ______ was $100.",
+  a: [
+    "sale",
+    "cost",
+    "trip",
+    "tip"
+  ],
   c: 1
 },
 {
-  q: "The manager replied to the email ______ the issue you reported yesterday.",
-  a: ["regarding", "despite", "beyond", "throughout"],
-  c: 0
-},
-{
-  q: "The new farming method can ______ more rice while using less water.",
-  a: ["reflect", "yield", "undergo", "customize"],
-  c: 1
-},
-{
-  q: "Every new employee must ______ a two-week training course before starting work.",
-  a: ["gain traction", "undergo", "represent", "distinguish"],
-  c: 1
-},
-{
-  q: "Electric cars have recently ______ because more charging stations have been built.",
-  a: ["taken over", "gained traction", "put down", "reflected"],
-  c: 1
-},
-{
-  q: "This painting is the ______ work created by the artist, not a copy.",
-  a: ["expressive", "original", "identical", "representative"],
-  c: 1
-},
-{
-  q: "Young children often ______ their parents' behavior without realizing it.",
-  a: ["distort", "imitate", "strengthen", "appreciate"],
-  c: 1
-},
-{
-  q: "Many successful athletes hope to ______ Olympic champions rather than simply copy their actions.",
-  a: ["emulate", "customize", "identify", "present"],
-  c: 0
-},
-{
-  q: "The company offered a generous bonus as an ______ for employees to work harder.",
-  a: ["specialty", "incentive", "experience", "reflection"],
-  c: 1
-},
-{
-  q: "Her creativity is what ______ from the other designers in the company.",
-  a: ["results in her", "sets her apart", "results from her", "takes over her"],
-  c: 1
-},
-{
-  q: "Many English words are ______ Latin.",
-  a: ["taking over", "stemming from", "resulting in", "reflecting on"],
-  c: 1
-},
-{
-  q: "The heavy rain ______ serious flooding in several villages.",
-  a: ["resulted from", "resulted in", "took after", "derived from"],
-  c: 1
-},
-{
-  q: "Mr. Nam really ______ Son Tung. They have the same smile and personality.",
-  a: ["takes on", "takes after", "takes over", "takes in"],
-  c: 1
-},
-{
-  q: "Many people find it difficult to ______ fake products from genuine ones.",
-  a: ["undergo", "distinguish", "yield", "represent"],
-  c: 1
-},
-{
-  q: "The hospital plans to ______ twenty new nurses before the end of the year.",
-  a: ["employ", "distort", "undergo", "customize"],
-  c: 0
-},
-{
-  q: "The traffic accident ______ the driver's carelessness on the wet road.",
-  a: ["resulted in", "resulted from", "took over", "yielded"],
-  c: 1
-},
-{
-  q: "People from all over the ______ visit this famous museum every year.",
-  a: ["globe", "scale", "custom", "identity"],
-  c: 0
-},
-{
-  q: "Air pollution has become a serious problem ______, so countries must work together to solve it.",
-  a: ["on special", "on a global scale", "beyond belief", "on reflection"],
-  c: 1
-},
-{
-  q: "The city is famous for its cultural ______, with people from many different ethnic groups living together peacefully.",
-  a: ["reflection", "diversity", "specialty", "popularity"],
-  c: 1
-},
-{
-  q: "National parks help protect ______ by providing a safe habitat for thousands of plant and animal species.",
-  a: ["biodiversity", "belief", "identity", "appreciation"],
-  c: 0
-},
-{
-  q: "The magician's performance was so amazing that it seemed ______.",
-  a: ["on special", "beyond belief", "on reflection", "with regard to"],
-  c: 1
-},
-{
-  q: "His excuse for arriving three hours late sounded so ______ that no one believed him.",
-  a: ["believable", "implausible", "appreciative", "reflective"],
-  c: 1
-},
-{
-  q: "Although the story was fictional, it was so ______ that many readers believed it had really happened.",
-  a: ["believable", "implausible", "expressionless", "inexperienced"],
-  c: 0
-},
-{
-  q: "It is our family ______ to have dinner together every Sunday evening.",
-  a: ["specialty", "custom", "incentive", "identity"],
-  c: 1
-},
-{
-  q: "Customers can ______ the color and design of the shoes before placing an order.",
-  a: ["represent", "customize", "strengthen", "identify"],
-  c: 1
-},
-{
-  q: "It is ______ in Japan to remove your shoes before entering someone's home.",
-  a: ["expressive", "customary", "appreciative", "original"],
-  c: 1
-},
-{
-  q: "Students should always show ______ their teachers and classmates.",
-  a: ["respect for", "appreciation to", "reflection on", "popularity with"],
-  c: 0
-},
-{
-  q: "Although Mr. Green is strict, he is a highly ______ teacher whom both students and parents admire.",
-  a: ["respectful", "respectable", "respective", "representative"],
-  c: 1
-},
-{
-  q: "Please return the completed forms to your ______ department managers before Friday.",
-  a: ["respectful", "respectable", "respective", "reflective"],
+  q: "The ______ is waiting to pay for her items.",
+  a: [
+    "driver",
+    "chef",
+    "customer",
+    "passenger"
+  ],
   c: 2
 },
 {
-  q: "Most companies prefer applicants who already have ______ instead of only classroom knowledge.",
-  a: ["hands-on experience", "presentation skills", "self-esteem", "encouragement"],
+  q: "I do not have a credit card, so I will pay in ______.",
+  a: [
+    "sale",
+    "change",
+    "price",
+    "cash"
+  ],
+  c: 3
+},
+{
+  q: "Please keep your ______ after you pay for the product.",
+  a: [
+    "receipt",
+    "route",
+    "menu",
+    "luggage"
+  ],
   c: 0
 },
 {
-  q: "The company decided to hire an ______ engineer to lead the new project.",
-  a: ["experienced", "inexperienced", "expressive", "identical"],
-  c: 0
-},
-{
-  q: "Good teachers always ______ their students to ask questions and think independently.",
-  a: ["identify", "encourage", "distinguish", "reflect"],
+  q: "The store is offering a 20% ______ on all shoes.",
+  a: [
+    "destination",
+    "discount",
+    "reservation",
+    "journey"
+  ],
   c: 1
 },
 {
-  q: "This Korean drama is extremely popular ______ young audiences throughout Asia.",
-  a: ["to", "with", "by", "of"],
-  c: 1
-},
-{
-  q: "These laptops are ______ this weekend, so customers can save up to 30%.",
-  a: ["on reflection", "beyond belief", "on special", "on a global scale"],
+  q: "These jackets are on ______ this week, so they are cheaper than usual.",
+  a: [
+    "order",
+    "cash",
+    "sale",
+    "luggage"
+  ],
   c: 2
 },
 {
-  q: "Italian food is the restaurant's ______, and many customers come just to try its homemade pasta.",
-  a: ["custom", "specialty", "incentive", "presentation"],
-  c: 1
+  q: "He put the milk and bread in his shopping ______.",
+  a: [
+    "station",
+    "bill",
+    "wallet",
+    "cart"
+  ],
+  c: 3
 },
 {
-  q: "Dr. Brown has ______ environmental science for more than twenty years.",
-  a: ["specialized in", "resulted from", "taken after", "represented"],
+  q: "The ______ scanned the products and took my payment.",
+  a: [
+    "cashier",
+    "passenger",
+    "driver",
+    "chef"
+  ],
   c: 0
 },
 {
-  q: "This room was ______ decorated for the wedding ceremony.",
-  a: ["especially", "specially", "globally", "respectfully"],
+  q: "After choosing your items, please go to the ______ to pay.",
+  a: [
+    "platform",
+    "checkout counter",
+    "airport",
+    "station"
+  ],
   c: 1
 },
 {
-  q: "The movie was so ______ that nobody left the cinema until it ended.",
-  a: ["captivating", "respectable", "reflective", "identical"],
+  q: "The shirt is too small, so I want to ______ it for a larger one.",
+  a: [
+    "serve",
+    "arrive",
+    "exchange",
+    "catch"
+  ],
+  c: 2
+},
+{
+  q: "This phone does not work. I would like to ask for a ______.",
+  a: [
+    "destination",
+    "schedule",
+    "journey",
+    "refund"
+  ],
+  c: 3
+},
+{
+  q: "Before buying a laptop, I usually ______ prices at several stores.",
+  a: [
+    "compare",
+    "catch",
+    "serve",
+    "arrive"
+  ],
   c: 0
 },
 {
-  q: "The manager will ______ the company's new marketing plan at tomorrow's meeting.",
-  a: ["represent", "present", "reflect", "identify"],
+  q: "I would like to ______ an order for two office chairs.",
+  a: [
+    "catch",
+    "place",
+    "miss",
+    "serve"
+  ],
   c: 1
 },
 {
-  q: "The teacher's ______ in the classroom immediately made the students become quiet.",
-  a: ["absence", "presence", "identity", "reflection"],
-  c: 1
+  q: "The store will ______ a receipt after you make the payment.",
+  a: [
+    "catch",
+    "book",
+    "print",
+    "arrive"
+  ],
+  c: 2
 },
 {
-  q: "Our national flag ______ the history and spirit of the country.",
-  a: ["represents", "presents", "distinguishes", "undergoes"],
+  q: "Thank you for your ______. We hope you enjoy your new laptop.",
+  a: [
+    "platform",
+    "departure",
+    "destination",
+    "purchase"
+  ],
+  c: 3
+},
+{
+  q: "Many office workers ______ the subway to work every morning.",
+  a: [
+    "take",
+    "serve",
+    "exchange",
+    "order"
+  ],
   c: 0
 },
 {
-  q: "When you look into calm water, it can ______ your face like a mirror.",
-  a: ["identify", "reflect", "encourage", "strengthen"],
+  q: "We need to leave now to ______ the 8:30 train.",
+  a: [
+    "book",
+    "catch",
+    "serve",
+    "exchange"
+  ],
   c: 1
 },
 {
-  q: "The businessman became ______ after successfully building several technology companies.",
-  a: ["expressionless", "filthy rich", "appreciative", "believable"],
-  c: 1
+  q: "Hurry up, or we will ______ the bus.",
+  a: [
+    "take",
+    "check",
+    "miss",
+    "arrive"
+  ],
+  c: 2
 },
 {
-  q: "The museum contains ______ information about Vietnamese history and culture.",
-  a: ["a wealth of", "a reflection of", "a respect for", "an identity of"],
+  q: "Our train departs from ______ 4.",
+  a: [
+    "airport",
+    "route",
+    "destination",
+    "Platform"
+  ],
+  c: 3
+},
+{
+  q: "Please check the train ______ to see what time it leaves.",
+  a: [
+    "schedule",
+    "receipt",
+    "menu",
+    "wallet"
+  ],
   c: 0
 },
 {
-  q: "Emma couldn't ______ the two twins because they looked almost identical.",
-  a: ["represent", "differentiate between", "undergo", "specialize in"],
+  q: "Our flight has a two-hour ______ because of bad weather.",
+  a: [
+    "arrival",
+    "delay",
+    "journey",
+    "destination"
+  ],
   c: 1
 },
 {
-  q: "Although he rarely smiles, his face becomes very ______ whenever he talks about his children.",
-  a: ["expressionless", "expressive", "believable", "reflective"],
-  c: 1
+  q: "Our flight leaves at 9:30 a.m. Please check the ______ time again.",
+  a: [
+    "arrival",
+    "meal",
+    "departure",
+    "shopping"
+  ],
+  c: 2
 },
 {
-  q: "Professor Wilson is a ______ scientist whose research has received international recognition.",
-  a: ["distinguished", "respectful", "inexperienced", "original"],
+  q: "Tokyo is our final ______.",
+  a: [
+    "route",
+    "platform",
+    "station",
+    "destination"
+  ],
+  c: 3
+},
+{
+  q: "Please keep your ______ with you while you are at the airport.",
+  a: [
+    "luggage",
+    "receipt",
+    "menu",
+    "shopping cart"
+  ],
   c: 0
+},
+{
+  q: "The ______ is driving the bus to the airport.",
+  a: [
+    "cashier",
+    "driver",
+    "waiter",
+    "chef"
+  ],
+  c: 1
+},
+{
+  q: "We are going to Singapore for a business ______ next week.",
+  a: [
+    "map",
+    "platform",
+    "trip",
+    "sale"
+  ],
+  c: 2
+},
+{
+  q: "This bus follows a different ______ because the main road is closed.",
+  a: [
+    "meal",
+    "receipt",
+    "tip",
+    "route"
+  ],
+  c: 3
+},
+{
+  q: "The train arrived ______, so we were not late for the meeting.",
+  a: [
+    "on time",
+    "on sale",
+    "in cash",
+    "online"
+  ],
+  c: 0
+},
+{
+  q: "I looked at the city ______ to find the train station.",
+  a: [
+    "menu",
+    "map",
+    "bill",
+    "receipt"
+  ],
+  c: 1
+},
+{
+  q: "I called the restaurant to make a ______ for four people.",
+  a: [
+    "journey",
+    "discount",
+    "reservation",
+    "departure"
+  ],
+  c: 2
+},
+{
+  q: "May I see the ______? I would like to choose my meal.",
+  a: [
+    "receipt",
+    "schedule",
+    "ticket",
+    "menu"
+  ],
+  c: 3
+},
+{
+  q: "The restaurant ______ breakfast from 6:30 to 10 a.m.",
+  a: [
+    "serves",
+    "catches",
+    "exchanges",
+    "misses"
+  ],
+  c: 0
+},
+{
+  q: "We usually ______ lunch at noon.",
+  a: [
+    "book",
+    "have",
+    "catch",
+    "exchange"
+  ],
+  c: 1
+},
+{
+  q: "I would like to ______ a drink, please.",
+  a: [
+    "arrive",
+    "miss",
+    "order",
+    "exchange"
+  ],
+  c: 2
+},
+{
+  q: "Could I have the ______, please? I would like to pay for our meal.",
+  a: [
+    "menu",
+    "reservation",
+    "tip",
+    "bill"
+  ],
+  c: 3
+},
+{
+  q: "The ______ prepared today's special dish in the kitchen.",
+  a: [
+    "chef",
+    "passenger",
+    "cashier",
+    "driver"
+  ],
+  c: 0
+},
+{
+  q: "We should ______ a table in advance because the restaurant is very busy.",
+  a: [
+    "serve",
+    "book",
+    "catch",
+    "pay"
+  ],
+  c: 1
+},
+{
+  q: "The waitress ______ our drinks to the table.",
+  a: [
+    "booked",
+    "caught",
+    "served",
+    "exchanged"
+  ],
+  c: 2
+},
+{
+  q: "After dinner, we ordered chocolate cake for ______.",
+  a: [
+    "breakfast",
+    "lunch",
+    "reservation",
+    "dessert"
+  ],
+  c: 3
 }
 ];
 
