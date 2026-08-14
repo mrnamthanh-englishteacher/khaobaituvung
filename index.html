@@ -91,13 +91,13 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG TOEIC ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG UNIT 3 ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
 </div>
 
-<div id="timer">⏳ 25:00</div>
+<div id="timer">⏳ 20:00</div>
 
 <div id="quiz"></div>
 
@@ -106,8 +106,7 @@ button{
 <div id="result"></div>
 
 <h3>🏆 Bảng xếp hạng</h3>
-<div id="leaderboard"></div>
-
+<div id="leaderboard"></divầy 
 </div>
 
 <script>
@@ -133,406 +132,206 @@ function shuffle(arr){
 
 // 📚 DATA
 let originalQuestions = [
-{
-  q: "The ______ of this T-shirt is $20.",
-  a: [
-    "price",
-    "route",
-    "meal",
-    "platform"
-  ],
-  c: 0
-},
-{
-  q: "The repair ______ was $100.",
-  a: [
-    "sale",
-    "cost",
-    "trip",
-    "tip"
-  ],
-  c: 1
-},
-{
-  q: "The ______ is waiting to pay for her items.",
-  a: [
-    "driver",
-    "chef",
-    "customer",
-    "passenger"
-  ],
-  c: 2
-},
-{
-  q: "I do not have a credit card, so I will pay in ______.",
-  a: [
-    "sale",
-    "change",
-    "price",
-    "cash"
-  ],
-  c: 3
-},
-{
-  q: "Please keep your ______ after you pay for the product.",
-  a: [
-    "receipt",
-    "route",
-    "menu",
-    "luggage"
-  ],
-  c: 0
-},
-{
-  q: "The store is offering a 20% ______ on all shoes.",
-  a: [
-    "destination",
-    "discount",
-    "reservation",
-    "journey"
-  ],
-  c: 1
-},
-{
-  q: "These jackets are on ______ this week, so they are cheaper than usual.",
-  a: [
-    "order",
-    "cash",
-    "sale",
-    "luggage"
-  ],
-  c: 2
-},
-{
-  q: "He put the milk and bread in his shopping ______.",
-  a: [
-    "station",
-    "bill",
-    "wallet",
-    "cart"
-  ],
-  c: 3
-},
-{
-  q: "The ______ scanned the products and took my payment.",
-  a: [
-    "cashier",
-    "passenger",
-    "driver",
-    "chef"
-  ],
-  c: 0
-},
-{
-  q: "After choosing your items, please go to the ______ to pay.",
-  a: [
-    "platform",
-    "checkout counter",
-    "airport",
-    "station"
-  ],
-  c: 1
-},
-{
-  q: "The shirt is too small, so I want to ______ it for a larger one.",
-  a: [
-    "serve",
-    "arrive",
-    "exchange",
-    "catch"
-  ],
-  c: 2
-},
-{
-  q: "This phone does not work. I would like to ask for a ______.",
-  a: [
-    "destination",
-    "schedule",
-    "journey",
-    "refund"
-  ],
-  c: 3
-},
-{
-  q: "Before buying a laptop, I usually ______ prices at several stores.",
-  a: [
-    "compare",
-    "catch",
-    "serve",
-    "arrive"
-  ],
-  c: 0
-},
-{
-  q: "I would like to ______ an order for two office chairs.",
-  a: [
-    "catch",
-    "place",
-    "miss",
-    "serve"
-  ],
-  c: 1
-},
-{
-  q: "The store will ______ a receipt after you make the payment.",
-  a: [
-    "catch",
-    "book",
-    "print",
-    "arrive"
-  ],
-  c: 2
-},
-{
-  q: "Thank you for your ______. We hope you enjoy your new laptop.",
-  a: [
-    "platform",
-    "departure",
-    "destination",
-    "purchase"
-  ],
-  c: 3
-},
-{
-  q: "Many office workers ______ the subway to work every morning.",
-  a: [
-    "take",
-    "serve",
-    "exchange",
-    "order"
-  ],
-  c: 0
-},
-{
-  q: "We need to leave now to ______ the 8:30 train.",
-  a: [
-    "book",
-    "catch",
-    "serve",
-    "exchange"
-  ],
-  c: 1
-},
-{
-  q: "Hurry up, or we will ______ the bus.",
-  a: [
-    "take",
-    "check",
-    "miss",
-    "arrive"
-  ],
-  c: 2
-},
-{
-  q: "Our train departs from ______ 4.",
-  a: [
-    "airport",
-    "route",
-    "destination",
-    "Platform"
-  ],
-  c: 3
-},
-{
-  q: "Please check the train ______ to see what time it leaves.",
-  a: [
-    "schedule",
-    "receipt",
-    "menu",
-    "wallet"
-  ],
-  c: 0
-},
-{
-  q: "Our flight has a two-hour ______ because of bad weather.",
-  a: [
-    "arrival",
-    "delay",
-    "journey",
-    "destination"
-  ],
-  c: 1
-},
-{
-  q: "Our flight leaves at 9:30 a.m. Please check the ______ time again.",
-  a: [
-    "arrival",
-    "meal",
-    "departure",
-    "shopping"
-  ],
-  c: 2
-},
-{
-  q: "Tokyo is our final ______.",
-  a: [
-    "route",
-    "platform",
-    "station",
-    "destination"
-  ],
-  c: 3
-},
-{
-  q: "Please keep your ______ with you while you are at the airport.",
-  a: [
-    "luggage",
-    "receipt",
-    "menu",
-    "shopping cart"
-  ],
-  c: 0
-},
-{
-  q: "The ______ is driving the bus to the airport.",
-  a: [
-    "cashier",
-    "driver",
-    "waiter",
-    "chef"
-  ],
-  c: 1
-},
-{
-  q: "We are going to Singapore for a business ______ next week.",
-  a: [
-    "map",
-    "platform",
-    "trip",
-    "sale"
-  ],
-  c: 2
-},
-{
-  q: "This bus follows a different ______ because the main road is closed.",
-  a: [
-    "meal",
-    "receipt",
-    "tip",
-    "route"
-  ],
-  c: 3
-},
-{
-  q: "The train arrived ______, so we were not late for the meeting.",
-  a: [
-    "on time",
-    "on sale",
-    "in cash",
-    "online"
-  ],
-  c: 0
-},
-{
-  q: "I looked at the city ______ to find the train station.",
-  a: [
-    "menu",
-    "map",
-    "bill",
-    "receipt"
-  ],
-  c: 1
-},
-{
-  q: "I called the restaurant to make a ______ for four people.",
-  a: [
-    "journey",
-    "discount",
-    "reservation",
-    "departure"
-  ],
-  c: 2
-},
-{
-  q: "May I see the ______? I would like to choose my meal.",
-  a: [
-    "receipt",
-    "schedule",
-    "ticket",
-    "menu"
-  ],
-  c: 3
-},
-{
-  q: "The restaurant ______ breakfast from 6:30 to 10 a.m.",
-  a: [
-    "serves",
-    "catches",
-    "exchanges",
-    "misses"
-  ],
-  c: 0
-},
-{
-  q: "We usually ______ lunch at noon.",
-  a: [
-    "book",
-    "have",
-    "catch",
-    "exchange"
-  ],
-  c: 1
-},
-{
-  q: "I would like to ______ a drink, please.",
-  a: [
-    "arrive",
-    "miss",
-    "order",
-    "exchange"
-  ],
-  c: 2
-},
-{
-  q: "Could I have the ______, please? I would like to pay for our meal.",
-  a: [
-    "menu",
-    "reservation",
-    "tip",
-    "bill"
-  ],
-  c: 3
-},
-{
-  q: "The ______ prepared today's special dish in the kitchen.",
-  a: [
-    "chef",
-    "passenger",
-    "cashier",
-    "driver"
-  ],
-  c: 0
-},
-{
-  q: "We should ______ a table in advance because the restaurant is very busy.",
-  a: [
-    "serve",
-    "book",
-    "catch",
-    "pay"
-  ],
-  c: 1
-},
-{
-  q: "The waitress ______ our drinks to the table.",
-  a: [
-    "booked",
-    "caught",
-    "served",
-    "exchanged"
-  ],
-  c: 2
-},
-{
-  q: "After dinner, we ordered chocolate cake for ______.",
-  a: [
-    "breakfast",
-    "lunch",
-    "reservation",
-    "dessert"
-  ],
-  c: 3
-}
+  {
+    q: "Over time, food waste begins to ______ naturally and turns into simpler substances.",
+    a: ["decompose", "solidify", "compress", "circulate"],
+    c: 0
+  },
+  {
+    q: "The new packaging is ______ three layers of recycled material.",
+    a: ["proportional to", "composed of", "contaminated with", "reluctant to"],
+    c: 1
+  },
+  {
+    q: "Sugar will ______ completely when it is stirred into hot water.",
+    a: ["decay", "melt", "dissolve", "accumulate"],
+    c: 2
+  },
+  {
+    q: "When liquid water is heated sufficiently, it begins to ______ into the air.",
+    a: ["solidify", "extract", "absorb", "evaporate"],
+    c: 3
+  },
+  {
+    q: "Please do not ______ these documents because we may need them again next week.",
+    a: ["discard", "retain", "store", "maintain"],
+    c: 0
+  },
+  {
+    q: "The warehouse is full, so we need to ______ some of the old equipment that is no longer used.",
+    a: ["accumulate", "get rid of", "absorb", "extract"],
+    c: 1
+  },
+  {
+    q: "All of the extra chairs are currently ______ until the new office opens.",
+    a: ["intact", "proportional", "in storage", "single-use"],
+    c: 2
+  },
+  {
+    q: "A ______ of the company's budget is spent on employee training.",
+    a: ["balanced diet", "public outrage", "rapid expansion", "significant portion"],
+    c: 3
+  },
+  {
+    q: "The amount of electricity used is directly ______ to the number of machines operating.",
+    a: ["proportional", "sustainable", "sufficient", "feasible"],
+    c: 0
+  },
+  {
+    q: "The restaurant uses ______ vegetables from yesterday to make soup instead of throwing them away.",
+    a: ["reusable", "leftover", "disposable", "imaginary"],
+    c: 1
+  },
+  {
+    q: "Flour is the main ______ in this type of bread.",
+    a: ["contaminant", "fertilizer", "ingredient", "pollutant"],
+    c: 2
+  },
+  {
+    q: "The factory's decision to discharge untreated chemical waste into the river was considered completely ______.",
+    a: ["commendable", "tolerable", "justifiable", "unacceptable"],
+    c: 3
+  },
+  {
+    q: "I ______ my coworker's black bag for mine because they looked almost identical.",
+    a: ["mistook", "abandoned", "retained", "displayed"],
+    c: 0
+  },
+  {
+    q: "The manufacturer recalled the product after discovering a serious ______ in its electrical system.",
+    a: ["mistake", "defect", "contribution", "allocation"],
+    c: 1
+  },
+  {
+    q: "The drinking water became ______ after harmful chemicals leaked from a nearby factory.",
+    a: ["purified", "reusable", "contaminated", "sustainable"],
+    c: 2
+  },
+  {
+    q: "Before using the bottle again, ______ it out thoroughly with clean water.",
+    a: ["soak", "scrub", "wipe", "rinse"],
+    c: 3
+  },
+  {
+    q: "Unlike single-use cups, these containers are ______ and can be washed and used many times.",
+    a: ["reusable", "disposable", "non-recyclable", "hazardous"],
+    c: 0
+  },
+  {
+    q: "Used batteries should be treated as ______ because they may contain dangerous chemicals.",
+    a: ["natural resources", "hazardous waste", "public transport", "biological diversity"],
+    c: 1
+  },
+  {
+    q: "The hotel has replaced single-use plastic bottles with more ______ alternatives.",
+    a: ["objectionable", "imaginary", "eco-friendly", "proportionate"],
+    c: 2
+  },
+  {
+    q: "The campaign was designed to ______ awareness of the environmental damage caused by plastic waste.",
+    a: ["rise", "lift", "produce", "raise"],
+    c: 3
+  },
+  {
+    q: "Using public transport instead of driving can help people reduce their carbon ______.",
+    a: ["footprint", "component", "coverage", "operation"],
+    c: 0
+  },
+  {
+    q: "Coal, oil, and natural gas are all types of ______ that release greenhouse gases when burned.",
+    a: ["natural resources", "fossil fuels", "organic fertilizers", "harmful chemicals"],
+    c: 1
+  },
+  {
+    q: "Some industries ______ forests and other natural resources faster than they can recover.",
+    a: ["circulate", "sterilize", "overexploit", "solidify"],
+    c: 2
+  },
+  {
+    q: "Trees help protect the environment because they ______ carbon dioxide from the atmosphere.",
+    a: ["discharge", "emit", "release", "absorb"],
+    c: 3
+  },
+  {
+    q: "The company plans to ______ more workers to deal with the rapid expansion of its business.",
+    a: ["recruit", "dismiss", "withdraw", "abandon"],
+    c: 0
+  },
+  {
+    q: "The company decided to ______ the product launch until additional safety tests were completed.",
+    a: ["hesitate", "postpone", "rush out", "pioneer"],
+    c: 1
+  },
+  {
+    q: "The company's new electric vehicle is expected to ______ early next year, when it becomes available for purchase.",
+    a: ["follow traditions", "cause obstacles", "hit the market", "withdraw"],
+    c: 2
+  },
+  {
+    q: "Although the new recycling system is expensive initially, it should save the company money ______.",
+    a: ["for good", "temporarily", "for the time being", "in the long run"],
+    c: 3
+  },
+  {
+    q: "The environmental team conducted a comprehensive ______ of the damage before recommending solutions.",
+    a: ["assessment", "distribution", "donation", "operation"],
+    c: 0
+  },
+  {
+    q: "The coastal ecosystem has suffered severe ______ because of pollution and uncontrolled development.",
+    a: ["expansion", "degradation", "contribution", "allocation"],
+    c: 1
+  },
+  {
+    q: "Thousands of visitors gathered to watch the ______ firework display during the festival.",
+    a: ["disputable", "imaginary", "spectacular", "intolerable"],
+    c: 2
+  },
+  {
+    q: "Scientists use computer models to ______ how climate change may affect wildlife populations in the future.",
+    a: ["operate", "maintain", "contribute", "predict"],
+    c: 3
+  },
+  {
+    q: "Protecting biological ______ is essential because healthy ecosystems depend on many different species.",
+    a: ["diversity", "uniformity", "similarity", "distribution"],
+    c: 0
+  },
+  {
+    q: "Oil began to ______ from a small hole in the damaged pipe and contaminate the surrounding soil.",
+    a: ["pour", "leak", "extract", "compress"],
+    c: 1
+  },
+  {
+    q: "All employees are encouraged to make a ______ to the company's environmental programme by suggesting new ideas.",
+    a: ["donation", "distribution", "contribution", "transition"],
+    c: 2
+  },
+  {
+    q: "Vegetable peels and other organic waste can be placed in a ______ to produce natural fertilizer.",
+    a: ["landfill", "storage room", "packaging box", "composting bin"],
+    c: 3
+  },
+  {
+    q: "Getting sufficient sleep and eating a balanced diet can help ______ infection and keep the body healthy.",
+    a: ["ward off", "use up", "clear up", "look into"],
+    c: 0
+  },
+  {
+    q: "The government plans to ______ a strict policy to reduce the amount of chemical waste discharged by factories.",
+    a: ["carry on", "implement", "turn out", "work out"],
+    c: 1
+  },
+  {
+    q: "Environmental officials are ______ a possible chemical leak at one of the factories.",
+    a: ["carrying on", "using up", "looking into", "putting into practice"],
+    c: 2
+  },
+  {
+    q: "All factories must ______ environmental legislation when discharging waste into rivers.",
+    a: ["carry on", "take on", "be willing to", "comply with"],
+    c: 3
+  }
 ];
 
 
@@ -571,7 +370,7 @@ questions.forEach((q,i)=>{
 });
 
 // ⏱ timer
-let time=1500;
+let time=1200;
 let timer=setInterval(()=>{
   let m=Math.floor(time/60);
   let s=time%60;
