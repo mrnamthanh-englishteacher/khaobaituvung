@@ -84,6 +84,18 @@ button{
 #leaderboard{
   margin-top:10px;
 }
+
+.quiz-locked{
+  opacity:0.55;
+  pointer-events:none;
+}
+
+#nameHint{
+  text-align:center;
+  color:#c00000;
+  font-weight:bold;
+  margin-top:8px;
+}
 </style>
 </head>
 
@@ -95,6 +107,7 @@ button{
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
+<div id="nameHint">⚠️ Phải nhập tên trước khi làm bài.</div>
 </div>
 
 <div id="timer">⏳ 20:00</div>
@@ -110,7 +123,9 @@ button{
 </div>
 
 <script>
-let tabSwitchCount = 0; 
+let tabSwitchCount = 0;
+let submitted = false;
+let timeExpired = false; 
 
 document.addEventListener("visibilitychange", function() {
   if (document.hidden) {
@@ -369,6 +384,22 @@ questions.forEach((q,i)=>{
   quizDiv.appendChild(div);
 });
 
+// 🔒 BẮT BUỘC NHẬP TÊN TRƯỚC KHI LÀM BÀI
+const usernameInput = document.getElementById("username");
+const nameHint = document.getElementById("nameHint");
+
+function setQuizAccess(){
+  const hasName = usernameInput.value.trim().length > 0;
+  document.querySelectorAll('#quiz input[type="radio"]').forEach(input=>{
+    input.disabled = !hasName || submitted || timeExpired;
+  });
+  quizDiv.classList.toggle("quiz-locked", !hasName && !submitted);
+  nameHint.style.display = hasName ? "none" : "block";
+}
+
+usernameInput.addEventListener("input", setQuizAccess);
+setQuizAccess();
+
 // ⏱ timer
 let time=1200;
 let timer=setInterval(()=>{
@@ -376,13 +407,27 @@ let timer=setInterval(()=>{
   let s=time%60;
   document.getElementById("timer").innerText=`⏳ ${m}:${s<10?"0"+s:s}`;
   time--;
-  if(time<0){clearInterval(timer);submitQuiz();}
+  if(time<0){
+    clearInterval(timer);
+    timeExpired = true;
+    submitQuiz(true);
+  }
 },1000);
 
 // submit
-function submitQuiz(){
+function submitQuiz(forceSubmit=false){
+  if(submitted) return;
+
   let name=document.getElementById("username").value.trim();
-  if(!name){alert("Nhập tên!");return;}
+  if(!name){
+    if(forceSubmit){
+      name = "CHƯA NHẬP TÊN";
+    }else{
+      alert("❌ Bạn phải nhập tên trước khi làm và nộp bài!");
+      usernameInput.focus();
+      return;
+    }
+  }
 let hasEmpty = false;
 
 // kiểm tra câu chưa làm
@@ -398,11 +443,24 @@ questions.forEach((q,i)=>{
   }
 });
 
-if(hasEmpty){
+if(hasEmpty && !forceSubmit){
   alert("❌ Bạn phải làm hết câu trước khi nộp!");
   return;
 }
   clearInterval(timer);
+  submitted = true;
+
+  // 🔒 Khóa toàn bộ bài sau khi nộp / hết giờ
+  document.querySelectorAll('#quiz input[type="radio"]').forEach(input=>input.disabled=true);
+  usernameInput.disabled = true;
+  quizDiv.classList.remove("quiz-locked");
+  const submitBtn = document.querySelector('button[onclick="submitQuiz()"]');
+  if(submitBtn){
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = "0.55";
+    submitBtn.style.cursor = "not-allowed";
+    submitBtn.innerText = timeExpired ? "⏰ Đã hết giờ - Bài đã tự nộp" : "✅ Đã nộp bài";
+  }
 
   let score=0;
   let wrongList=[];
@@ -433,7 +491,8 @@ if(hasEmpty){
 let resultHTML = `
 🎉 <b>${name}</b> đúng <b>${score}/${questions.length}</b><br>
 ⏰ ${now}<br>
-⚠️ TabSwitch: ${tabSwitchCount || 0}<br><br>
+⚠️ TabSwitch: ${tabSwitchCount || 0}<br>
+${timeExpired ? "⏰ <b>Hết thời gian: hệ thống đã tự động nộp và khóa bài.</b><br>" : ""}<br>
 `;
 
 if(wrongRate < 0.3){
