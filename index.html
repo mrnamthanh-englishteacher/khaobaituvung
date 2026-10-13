@@ -103,7 +103,7 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG READING UNIT 4 ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG UNIT 3 ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
@@ -147,204 +147,154 @@ function shuffle(arr){
 
 // 📚 DATA
 let originalQuestions = [
- {
-    q: "Uncontrolled urban expansion may ______ nearby forests and farmland as developers gradually build beyond the city's existing boundaries.",
-    a: ["encroach upon", "engage with", "derive from", "blend in with"],
-    c: 0
-  },
   {
-    q: "The sudden closure of the region's largest factory could ______ serious economic difficulties for thousands of local families.",
-    a: ["mitigate", "bring about", "overlook", "eradicate"],
+    q: 'What does "decompose" mean?',
+    a: ["Tái sử dụng", "Phân hủy", "Đóng gói", "Bảo quản"],
     c: 1
   },
   {
-    q: "Many highly educated young people move abroad in search of better ______, including more attractive career opportunities and higher salaries.",
-    a: ["consumption patterns", "preventive measures", "job prospects", "social exclusions"],
+    q: 'What does "packaging" mean?',
+    a: ["Hàng tồn kho", "Chất thải", "Bao bì, vật liệu đóng gói", "Sản phẩm"],
     c: 2
   },
   {
-    q: "When a country permanently loses large numbers of highly skilled professionals to employment opportunities abroad, it may experience ______.",
-    a: ["displacement", "social exclusion", "engagement", "brain drain"],
+    q: 'What does "discard" mean?',
+    a: ["Vứt bỏ", "Thu gom", "Chấp nhận", "Lưu trữ"],
+    c: 0
+  },
+  {
+    q: 'What does "storage" mean?',
+    a: ["Sự phân hủy", "Sự ô nhiễm", "Sự chấp nhận", "Sự lưu trữ, bảo quản"],
     c: 3
   },
   {
-    q: "Rapid economic development should not come at the ______ of environmental protection and public health.",
-    a: ["expense", "proximity", "engagement", "implementation"],
-    c: 0
-  },
-  {
-    q: "Plastic waste can seriously ______ marine ecosystems by damaging habitats and interfering with food chains.",
-    a: ["sustain", "disrupt", "accommodate", "regulate"],
+    q: 'What does "a substantial portion of" mean?',
+    a: ["Một phần rất nhỏ của", "Một phần đáng kể của", "Toàn bộ", "Không có phần nào"],
     c: 1
   },
   {
-    q: "Small family-owned shops often struggle to ______ multinational retailers that can offer much lower prices.",
-    a: ["assimilate", "advocate", "compete with", "accumulate"],
+    q: 'What does "leftover" mean?',
+    a: ["Được tái chế", "Bị hỏng", "Còn thừa, còn lại", "Đã được rửa sạch"],
     c: 2
   },
   {
-    q: "Agriculture remains the ______ of the local economy, providing the main source of employment and income for most residents.",
-    a: ["anomaly", "intervention", "displacement", "backbone"],
+    q: 'What does "acceptable" mean?',
+    a: ["Có thể chấp nhận được", "Không thể chấp nhận được", "Không chính xác", "Nguy hiểm"],
+    c: 0
+  },
+  {
+    q: 'What does "by mistake" mean?',
+    a: ["Một cách cẩn thận", "Có chủ ý", "Theo kế hoạch", "Do nhầm lẫn"],
     c: 3
   },
   {
-    q: "By repeatedly warning that immediate action is essential, the latest climate report clearly ______ the urgent need to reduce greenhouse gas emissions.",
-    a: ["underscores", "overlooks", "diminishes", "disrupts"],
-    c: 0
-  },
-  {
-    q: "Policymakers sometimes face a difficult ______: stricter environmental regulations may protect nature but increase short-term costs for businesses.",
-    a: ["initiative", "trade-off", "anomaly", "proximity"],
+    q: 'What does "contaminant" mean?',
+    a: ["Chất bảo quản", "Chất gây ô nhiễm", "Bao bì", "Chất dinh dưỡng"],
     c: 1
   },
   {
-    q: "Poorly planned urban development may ______ existing social inequalities, making the gap between wealthy and disadvantaged residents even wider.",
-    a: ["alleviate", "eradicate", "exacerbate", "sustain"],
+    q: 'What does "rinse" mean?',
+    a: ["Đóng gói", "Phân hủy", "Rửa, tráng bằng nước", "Vứt bỏ"],
     c: 2
   },
   {
-    q: "Restoring wetlands can help ______ the effects of flooding because wetlands absorb and temporarily store excess rainwater.",
-    a: ["generate", "trigger", "accelerate", "mitigate"],
+    q: 'Từ nào có nghĩa là "sự phân hủy"?',
+    a: ["Composition", "Contamination", "Decomposition", "Proportion"],
+    c: 2
+  },
+  {
+    q: '"Một gói/bó gồm..." trong tiếng Anh là:',
+    a: ["A pack of", "A portion to", "A storage of", "A mistake for"],
+    c: 0
+  },
+  {
+    q: 'Cụm từ nào có nghĩa là "vứt bỏ"?',
+    a: ["Look after", "Take part in", "Put up with", "Get rid of"],
     c: 3
   },
   {
-    q: "If toxic chemicals continue to enter the river, they may ______ a serious threat to both human health and aquatic life.",
-    a: ["pose", "derive", "undertake", "integrate"],
-    c: 0
-  },
-  {
-    q: "Environmental organizations often ______ stricter wildlife-protection laws, publicly arguing that stronger regulations are necessary.",
-    a: ["accommodate", "advocate", "fluctuate", "assimilate"],
+    q: '"Được lưu trữ, đang được cất giữ" trong tiếng Anh là:',
+    a: ["By mistake", "In storage", "In proportion", "By accident"],
     c: 1
   },
   {
-    q: "Despite repeated requests from residents, the needs of disadvantaged communities were completely ______ by planners, who gave them no consideration.",
-    a: ["integrated", "regulated", "overlooked", "generated"],
+    q: 'Từ nào có nghĩa là "tỷ lệ"?',
+    a: ["Portion", "Package", "Proportion", "Acceptance"],
     c: 2
   },
   {
-    q: "A policy that distributes resources fairly and ensures that disadvantaged groups receive appropriate support can be described as ______.",
-    a: ["conventional", "undesirable", "systemic", "equitable"],
+    q: 'Từ nào có nghĩa là "tỷ lệ thuận"?',
+    a: ["Directly proportional", "Inversely proportional", "Unacceptable", "Mistakenly"],
+    c: 0
+  },
+  {
+    q: 'Từ nào có nghĩa là "sự chấp nhận"?',
+    a: ["Acceptable", "Accepted", "Accept", "Acceptance"],
     c: 3
   },
   {
-    q: "If social isolation is allowed to persist for years without intervention, it may gradually ______ and become deeply established within a community.",
-    a: ["take root", "sleep rough", "deal a blow", "come at a cost"],
-    c: 0
-  },
-  {
-    q: "Although thousands of people live in close physical ______ to one another in large apartment buildings, many rarely interact with their neighbours.",
-    a: ["resilience", "proximity", "prosperity", "displacement"],
+    q: 'Cụm từ nào có nghĩa là "nhầm A với B"?',
+    a: ["Accept A for B", "Mistake A for B", "Store A for B", "Rinse A with B"],
     c: 1
   },
   {
-    q: "When online communication completely replaces meaningful face-to-face interaction, it may unintentionally ______ feelings of loneliness that were not previously present.",
-    a: ["eradicate", "diminish", "engender", "alleviate"],
+    q: 'Từ nào có nghĩa là "sự nhiễm bẩn, ô nhiễm"?',
+    a: ["Contamination", "Contaminant", "Contaminate", "Composition"],
+    c: 0
+  },
+  {
+    q: 'Cụm động từ nào có nghĩa là "súc/rửa sạch bên trong"?',
+    a: ["Throw away", "Break down", "Rinse out", "Pack up"],
     c: 2
   },
   {
-    q: "Temporary workers without guaranteed hours, stable income, or long-term contracts often find themselves in ______ employment.",
-    a: ["adaptive", "forward-looking", "integrated", "precarious"],
+    q: "Fruit and vegetables naturally ______ over time.",
+    a: ["accept", "rinse", "pack", "decompose"],
     c: 3
   },
   {
-    q: "Despite living among millions of people, some urban residents find that meaningful and lasting social connections remain ______ and difficult to establish.",
-    a: ["elusive", "equitable", "conventional", "off-peak"],
+    q: "This table is ______ wood and metal.",
+    a: ["composed of", "discarded of", "accepted of", "rinsed of"],
     c: 0
   },
   {
-    q: "After years of treating loneliness as merely a private matter, governments increasingly ______ it as a serious public-health concern.",
-    a: ["generate", "acknowledge", "accelerate", "regulate"],
+    q: "Please don't ______ plastic bottles into the river.",
+    a: ["store", "throw away", "accept", "rinse"],
     c: 1
   },
   {
-    q: "Some researchers ______ chronic loneliness with major health risks such as smoking, arguing that their long-term effects can be comparable in severity.",
-    a: ["separate", "contrast", "equate", "protect"],
+    q: "We need a large ______ to carry all these books.",
+    a: ["mistake", "proportion", "package", "contaminant"],
     c: 2
   },
   {
-    q: "Long-term exposure to severe air pollution can increase the risk of ______ mortality, causing some people to die earlier than normally expected.",
-    a: ["profound", "systemic", "transient", "premature"],
+    q: "There is some ______ food in the fridge from yesterday's dinner.",
+    a: ["acceptable", "proportional", "mistaken", "leftover"],
     c: 3
   },
   {
-    q: "Tackling urban loneliness effectively will ______ substantial investment in public spaces, community programmes, and social services.",
-    a: ["call for", "compete with", "derive from", "blend in with"],
-    c: 0
-  },
-  {
-    q: "Adding more parks, libraries, and community centres can ______ opportunities for face-to-face interaction by increasing the number of places where residents can meet.",
-    a: ["eradicate", "augment", "overlook", "fluctuate"],
+    q: "His answer is completely wrong. It is ______.",
+    a: ["acceptable", "unacceptable", "acceptance", "accept"],
     c: 1
   },
   {
-    q: "Researchers found that many of the area's social problems ______ long-term poverty and unequal access to education, rather than recent technological changes.",
-    a: ["generate", "undertake", "stem from", "integrate"],
-    c: 2
-  },
-  {
-    q: "The city launched a new housing ______ specifically designed to provide homeless teenagers with accommodation and counselling.",
-    a: ["anomaly", "backbone", "erosion", "initiative"],
-    c: 3
-  },
-  {
-    q: "Smartphones and online services are now ______ linked to modern daily life, making it extremely difficult to separate digital technology from work, education, and communication.",
-    a: ["inextricably", "holistically", "conventionally", "transiently"],
+    q: "I took your bag ______ because it looked like mine.",
+    a: ["by mistake", "in storage", "on purpose", "in proportion"],
     c: 0
   },
   {
-    q: "The new platform can ______ information from several databases into its system so that the data can be processed together.",
-    a: ["eradicate", "assimilate", "diminish", "advocate"],
-    c: 1
-  },
-  {
-    q: "The researchers had difficulty combining the results because the data came from ______ sources that differed considerably in format, methodology, and purpose.",
-    a: ["adaptive", "integrated", "disparate", "equitable"],
+    q: "Dirty water can ______ food and make people sick.",
+    a: ["decompose", "accept", "contaminate", "proportion"],
     c: 2
   },
   {
-    q: "Electricity prices may ______ considerably from month to month, rising when demand is high and falling when demand decreases.",
-    a: ["sustain", "accelerate", "eradicate", "fluctuate"],
-    c: 3
-  },
-  {
-    q: "Without treatment, the patient's condition may gradually ______, becoming more severe and increasingly difficult to manage.",
-    a: ["deteriorate", "accommodate", "engage", "accumulate"],
-    c: 0
-  },
-  {
-    q: "Vaccination programmes, health screenings, and public-awareness campaigns are examples of ______ intended to stop illnesses before they become more serious.",
-    a: ["consumption patterns", "preventive measures", "job prospects", "standards of living"],
+    q: "Please ______ the vegetables with clean water before cooking.",
+    a: ["discard", "rinse", "store", "pack"],
     c: 1
   },
   {
-    q: "Unlike systems that operate in exactly the same way under all circumstances, ______ technologies can adjust their behaviour in response to changing conditions.",
-    a: ["profound", "conventional", "adaptive", "overriding"],
-    c: 2
-  },
-  {
-    q: "Fast fashion gives consumers access to inexpensive clothing, but this convenience can ______, as producing and discarding huge quantities of clothes causes serious environmental damage.",
-    a: ["take root", "engage with others", "blend in with society", "come at a cost"],
-    c: 3
-  },
-  {
-    q: "The new law aims to ______ a dangerous disease completely rather than merely reduce the number of cases.",
-    a: ["eradicate", "sustain", "accumulate", "accommodate"],
-    c: 0
-  },
-  {
-    q: "Homeless teenagers sometimes try to ______ their classmates by dressing and behaving similarly so that their difficult living situation remains unnoticed.",
-    a: ["compete with", "blend in with", "pose a threat to", "stem from"],
-    c: 1
-  },
-  {
-    q: "Severe financial ______ may prevent low-income families from paying rent or obtaining safe and stable housing.",
-    a: ["prosperity", "engagement", "hardship", "resilience"],
-    c: 2
-  },
-  {
-    q: "Access to stable housing, education, and supportive relationships can help vulnerable young people develop ______, enabling them to recover from difficult experiences and adapt to future challenges.",
-    a: ["inequality", "displacement", "intervention", "resilience"],
+    q: "The amount of money you earn is directly ______ to the number of hours you work.",
+    a: ["proportion", "proportionate of", "proportioning", "proportional"],
     c: 3
   }
 ];
