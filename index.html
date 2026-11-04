@@ -103,7 +103,7 @@ button{
 
 <div class="container">
 
-<h1>✨ KHẢO BÀI TỪ VỰNG UNIT 3 ✨</h1>
+<h1>✨ KHẢO BÀI TỪ VỰNG  ✨</h1>
 
 <div class="header">
 <input id="username" placeholder="Nhập tên của bạn...">
@@ -147,155 +147,155 @@ function shuffle(arr){
 
 // 📚 DATA
 let originalQuestions = [
-  {
-    q: 'What does "decompose" mean?',
-    a: ["Tái sử dụng", "Phân hủy", "Đóng gói", "Bảo quản"],
-    c: 1
-  },
-  {
-    q: 'What does "packaging" mean?',
-    a: ["Hàng tồn kho", "Chất thải", "Bao bì, vật liệu đóng gói", "Sản phẩm"],
-    c: 2
-  },
-  {
-    q: 'What does "discard" mean?',
-    a: ["Vứt bỏ", "Thu gom", "Chấp nhận", "Lưu trữ"],
+   {
+    q: "Thousands of high school graduates ______ scholarships to study at prestigious universities abroad every year.",
+    a: ["apply for", "qualify in", "engage to", "specify for"],
     c: 0
   },
   {
-    q: 'What does "storage" mean?',
-    a: ["Sự phân hủy", "Sự ô nhiễm", "Sự chấp nhận", "Sự lưu trữ, bảo quản"],
-    c: 3
-  },
-  {
-    q: 'What does "a substantial portion of" mean?',
-    a: ["Một phần rất nhỏ của", "Một phần đáng kể của", "Toàn bộ", "Không có phần nào"],
-    c: 1
-  },
-  {
-    q: 'What does "leftover" mean?',
-    a: ["Được tái chế", "Bị hỏng", "Còn thừa, còn lại", "Đã được rửa sạch"],
+    q: "The new safety regulations are ______ all employees working in the laboratory, regardless of their positions.",
+    a: ["application to", "applicant for", "applicable to", "appliance for"],
     c: 2
   },
   {
-    q: 'What does "acceptable" mean?',
-    a: ["Có thể chấp nhận được", "Không thể chấp nhận được", "Không chính xác", "Nguy hiểm"],
+    q: "The professional athlete was immediately ______ from the international competition after officials discovered that he had violated the anti-doping regulations.",
+    a: ["qualified", "disqualified", "exemplified", "specified"],
+    c: 1
+  },
+  {
+    q: "The technology company is looking for highly ______ engineers who have extensive experience in developing artificial intelligence systems.",
+    a: ["qualification", "qualify", "quality", "qualified"],
+    c: 3
+  },
+  {
+    q: "To achieve better academic results, students should make an effort ______ their time-management and communication skills.",
+    a: ["improving", "improve", "to improve", "improved"],
+    c: 2
+  },
+  {
+    q: "The volunteers put considerable effort ______ organising a charity event to raise money for disadvantaged children in remote areas.",
+    a: ["into", "for", "with", "to"],
     c: 0
   },
   {
-    q: 'What does "by mistake" mean?',
-    a: ["Một cách cẩn thận", "Có chủ ý", "Theo kế hoạch", "Do nhầm lẫn"],
+    q: "During the science lesson, the teacher encouraged students to engage ______ group discussions about the advantages and disadvantages of artificial intelligence.",
+    a: ["to", "with", "for", "in"],
     c: 3
   },
   {
-    q: 'What does "contaminant" mean?',
-    a: ["Chất bảo quản", "Chất gây ô nhiễm", "Bao bì", "Chất dinh dưỡng"],
+    q: "Teachers should regularly engage ______ their students through classroom conversations to better understand their learning difficulties and personal needs.",
+    a: ["in", "with", "to", "from"],
     c: 1
   },
   {
-    q: 'What does "rinse" mean?',
-    a: ["Đóng gói", "Phân hủy", "Rửa, tráng bằng nước", "Vứt bỏ"],
+    q: "Under the ______ of experienced teachers, students gradually developed the necessary skills to conduct independent scientific research.",
+    a: ["guide", "guiding", "guidance", "guided"],
     c: 2
   },
   {
-    q: 'Từ nào có nghĩa là "sự phân hủy"?',
-    a: ["Composition", "Contamination", "Decomposition", "Proportion"],
-    c: 2
-  },
-  {
-    q: '"Một gói/bó gồm..." trong tiếng Anh là:',
-    a: ["A pack of", "A portion to", "A storage of", "A mistake for"],
+    q: "Educational experts believe that every child should be given equal opportunities to develop their abilities and realise their full ______.",
+    a: ["potential", "personnel", "qualification", "specification"],
     c: 0
   },
   {
-    q: 'Cụm từ nào có nghĩa là "vứt bỏ"?',
-    a: ["Look after", "Take part in", "Put up with", "Get rid of"],
+    q: "Artificial intelligence has the potential ______ the way people work by automating repetitive tasks and improving productivity.",
+    a: ["changing", "change", "changed", "to change"],
     c: 3
   },
   {
-    q: '"Được lưu trữ, đang được cất giữ" trong tiếng Anh là:',
-    a: ["By mistake", "In storage", "In proportion", "By accident"],
+    q: "The multinational corporation hired an experienced financial ______ to examine its annual reports and identify potential investment risks.",
+    a: ["analysis", "analyst", "analyse", "analytical"],
     c: 1
   },
   {
-    q: 'Từ nào có nghĩa là "tỷ lệ"?',
-    a: ["Portion", "Package", "Proportion", "Acceptance"],
+    q: "Before introducing the new education policy, the researchers decided to perform a detailed ______ of students' learning habits and academic performance.",
+    a: ["analyst", "analyse", "analysis", "analytical"],
     c: 2
   },
   {
-    q: 'Từ nào có nghĩa là "tỷ lệ thuận"?',
-    a: ["Directly proportional", "Inversely proportional", "Unacceptable", "Mistakenly"],
+    q: "Online learning platforms are particularly ______ to students living in remote areas because they provide access to educational resources without requiring long-distance travel.",
+    a: ["beneficial", "beneficiary", "benefactor", "benefit"],
     c: 0
   },
   {
-    q: 'Từ nào có nghĩa là "sự chấp nhận"?',
-    a: ["Acceptable", "Accepted", "Accept", "Acceptance"],
-    c: 3
-  },
-  {
-    q: 'Cụm từ nào có nghĩa là "nhầm A với B"?',
-    a: ["Accept A for B", "Mistake A for B", "Store A for B", "Rinse A with B"],
-    c: 1
-  },
-  {
-    q: 'Từ nào có nghĩa là "sự nhiễm bẩn, ô nhiễm"?',
-    a: ["Contamination", "Contaminant", "Contaminate", "Composition"],
-    c: 0
-  },
-  {
-    q: 'Cụm động từ nào có nghĩa là "súc/rửa sạch bên trong"?',
-    a: ["Throw away", "Break down", "Rinse out", "Pack up"],
+    q: "The success of the community project is a clear ______ of how effective teamwork can help solve serious environmental problems.",
+    a: ["exemplary", "exemplify", "exemplification", "exemplified"],
     c: 2
   },
   {
-    q: "Fruit and vegetables naturally ______ over time.",
-    a: ["accept", "rinse", "pack", "decompose"],
+    q: "A good leader should lead ______ by demonstrating responsibility, honesty and dedication rather than simply telling employees what to do.",
+    a: ["in quality", "by example", "under guidance", "with potential"],
+    c: 1
+  },
+  {
+    q: "When reporting problems with the new computer system, employees are expected to be ______ about the errors they have encountered so that technicians can identify and fix them quickly.",
+    a: ["specification", "specify", "specifically", "specific"],
     c: 3
   },
   {
-    q: "This table is ______ wood and metal.",
-    a: ["composed of", "discarded of", "accepted of", "rinsed of"],
+    q: "To make the university admission process more convenient, the government has introduced an online ______ system that allows students to submit their documents electronically.",
+    a: ["application", "applicant", "appliance", "applicable"],
     c: 0
   },
   {
-    q: "Please don't ______ plastic bottles into the river.",
-    a: ["store", "throw away", "accept", "rinse"],
-    c: 1
-  },
-  {
-    q: "We need a large ______ to carry all these books.",
-    a: ["mistake", "proportion", "package", "contaminant"],
-    c: 2
-  },
-  {
-    q: "There is some ______ food in the fridge from yesterday's dinner.",
-    a: ["acceptable", "proportional", "mistaken", "leftover"],
-    c: 3
-  },
-  {
-    q: "His answer is completely wrong. It is ______.",
-    a: ["acceptable", "unacceptable", "acceptance", "accept"],
-    c: 1
-  },
-  {
-    q: "I took your bag ______ because it looked like mine.",
-    a: ["by mistake", "in storage", "on purpose", "in proportion"],
+    q: "Although the teacher's comments were intended to help her improve, the student took them ______ and felt that she was being unfairly criticised.",
+    a: ["personally", "specifically", "effortlessly", "beneficially"],
     c: 0
   },
   {
-    q: "Dirty water can ______ food and make people sick.",
-    a: ["decompose", "accept", "contaminate", "proportion"],
-    c: 2
-  },
-  {
-    q: "Please ______ the vegetables with clean water before cooking.",
-    a: ["discard", "rinse", "store", "pack"],
+    q: "The science museum organised an ______ workshop in which students could interact with robots, experiment with new technologies and learn about artificial intelligence.",
+    a: ["engaged", "engaging", "engagement", "engage"],
     c: 1
   },
   {
-    q: "The amount of money you earn is directly ______ to the number of hours you work.",
-    a: ["proportion", "proportionate of", "proportioning", "proportional"],
-    c: 3
+    q: "Before purchasing a new gaming laptop, customers should carefully examine its technical ______, including the processor, memory capacity and graphics card.",
+    a: ["qualifications", "applications", "specifications", "exemplifications"],
+    c: 2
+  },
+  {
+    q: "After dating for five years, the couple finally decided to get ______ to each other and announced their wedding plans to their families.",
+    a: ["engaged", "engaging", "engagement", "engage"],
+    c: 0
+  },
+  {
+    q: "After several months of training, the young athlete finally ______ for the national swimming championship by achieving the required qualifying time.",
+    a: ["specified", "qualified", "exemplified", "disqualified"],
+    c: 1
+  },
+  {
+    q: "The young researcher managed to complete the complicated data-processing task almost ______ because she had developed an efficient computer program to automate most of the calculations.",
+    a: ["effort", "effortless", "effortlessly", "effortlessness"],
+    c: 2
+  },
+  {
+    q: "The educational charity received a generous donation from an anonymous ______ who wanted to support children from disadvantaged backgrounds.",
+    a: ["beneficiary", "benefactor", "applicant", "analyst"],
+    c: 1
+  },
+  {
+    q: "The young volunteer received a national award for her exemplary behaviour and outstanding dedication to community service. The word 'exemplary' is CLOSEST in meaning to ______.",
+    a: ["outstanding", "potential", "unqualified", "effortless"],
+    c: 0
+  },
+  {
+    q: "The hospital is looking for qualified medical personnel who possess the necessary professional skills and experience to provide safe patient care. The word 'qualified' is OPPOSITE in meaning to ______.",
+    a: ["experienced", "competent", "unqualified", "exemplary"],
+    c: 2
+  },
+  {
+    q: "The teacher asked each student to choose one particular environmental problem and explain its causes and possible solutions in detail. The word 'particular' is CLOSEST in meaning to ______.",
+    a: ["personal", "specific", "potential", "beneficial"],
+    c: 1
+  },
+  {
+    q: "The lecturer used several real-life examples to illustrate how artificial intelligence can improve the efficiency of modern transportation systems. The word 'illustrate' is CLOSEST in meaning to ______.",
+    a: ["specify", "analyse", "exemplify", "qualify"],
+    c: 2
+  },
+  {
+    q: "Learning how to use artificial intelligence tools can be advantageous to students because these tools help them organise information, save time and improve their research skills. The word 'advantageous' is CLOSEST in meaning to ______.",
+    a: ["beneficial", "personal", "engaging", "specific"],
+    c: 0
   }
 ];
 
