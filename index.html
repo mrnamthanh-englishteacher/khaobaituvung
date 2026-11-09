@@ -147,155 +147,180 @@ function shuffle(arr){
 
 // 📚 DATA
 let originalQuestions = [
-   {
-    q: "Thousands of high school graduates ______ scholarships to study at prestigious universities abroad every year.",
-    a: ["apply for", "qualify in", "engage to", "specify for"],
-    c: 0
-  },
-  {
-    q: "The new safety regulations are ______ all employees working in the laboratory, regardless of their positions.",
-    a: ["application to", "applicant for", "applicable to", "appliance for"],
-    c: 2
-  },
-  {
-    q: "The professional athlete was immediately ______ from the international competition after officials discovered that he had violated the anti-doping regulations.",
-    a: ["qualified", "disqualified", "exemplified", "specified"],
+ {
+    q: "During the floods, several completely invented rescue stories spread online. Investigators later confirmed that the stories were deliberately ______ and had no basis in reality.",
+    a: ["unverified", "fabricated", "curated", "coherent"],
     c: 1
   },
   {
-    q: "The technology company is looking for highly ______ engineers who have extensive experience in developing artificial intelligence systems.",
-    a: ["qualification", "qualify", "quality", "qualified"],
+    q: "The government launched a nationwide campaign to ______ websites that deliberately spread dangerous misinformation, imposing penalties on those responsible.",
+    a: ["feed on", "rally around", "crack down on", "pave the way for"],
+    c: 2
+  },
+  {
+    q: "During the emergency, constant rumours and misleading posts began to ______ public confidence in official rescue announcements, gradually weakening people's trust.",
+    a: ["chip away at", "lay the groundwork for", "prevail over", "go hand in hand with"],
+    c: 0
+  },
+  {
+    q: "The mayor's speech was completely inaudible because the protesters' loud chanting managed to ______ his voice.",
+    a: ["sideline", "twist", "amplify", "drown out"],
     c: 3
   },
   {
-    q: "To achieve better academic results, students should make an effort ______ their time-management and communication skills.",
-    a: ["improving", "improve", "to improve", "improved"],
-    c: 2
-  },
-  {
-    q: "The volunteers put considerable effort ______ organising a charity event to raise money for disadvantaged children in remote areas.",
-    a: ["into", "for", "with", "to"],
+    q: "Even after repeated setbacks, the charity refused to ______; volunteers continued their relief work until every affected family had received assistance.",
+    a: ["throw in the towel", "throw it off balance", "turn a blind eye to", "take root"],
     c: 0
   },
   {
-    q: "During the science lesson, the teacher encouraged students to engage ______ group discussions about the advantages and disadvantages of artificial intelligence.",
-    a: ["to", "with", "for", "in"],
+    q: "The fake advertisement promised instant wealth and displayed impressive-looking but meaningless statistics. Experts described the presentation as pure ______ intended to deceive investors.",
+    a: ["public discourse", "collateral damage", "smoke and mirrors", "fact-checking"],
+    c: 2
+  },
+  {
+    q: "After several weeks of public education and coordinated action, accurate information finally began to replace false rumours, helping authorities ______ in the battle against misinformation.",
+    a: ["spiral out of control", "turn the tide", "slip through their fingers", "weed out"],
+    c: 1
+  },
+  {
+    q: "Following the announcement of a revolutionary AI chip, the company's share price increased by more than 300% in just two days. Its value appeared to ______ overnight.",
+    a: ["tumble", "materialize", "skyrocket", "outpace"],
+    c: 2
+  },
+  {
+    q: "Although the startup initially attracted huge investment, it soon struggled to pay its employees and operating expenses. Without emergency funding, it would be unable to ______.",
+    a: ["keep afloat", "double down on", "lock horns over", "kick into high gear"],
+    c: 0
+  },
+  {
+    q: "After spending billions on experimental AI systems without producing any commercially successful products, investors began questioning the project's long-term ______.",
+    a: ["rivalry", "valuation", "projection", "profitability"],
     c: 3
   },
   {
-    q: "Teachers should regularly engage ______ their students through classroom conversations to better understand their learning difficulties and personal needs.",
-    a: ["in", "with", "to", "from"],
+    q: "Although competitors had already abandoned similar projects, the researchers refused to ______ and continued working until they achieved a breakthrough.",
+    a: ["run out of steam", "throw in the towel", "pick up the pieces", "strike a delicate balance"],
     c: 1
   },
   {
-    q: "Under the ______ of experienced teachers, students gradually developed the necessary skills to conduct independent scientific research.",
-    a: ["guide", "guiding", "guidance", "guided"],
-    c: 2
-  },
-  {
-    q: "Educational experts believe that every child should be given equal opportunities to develop their abilities and realise their full ______.",
-    a: ["potential", "personnel", "qualification", "specification"],
+    q: "The two technology giants have repeatedly ______ control of the global semiconductor market, with each trying to secure exclusive supply agreements.",
+    a: ["locked horns over", "rallied around", "laid the groundwork for", "remained confined to"],
     c: 0
   },
   {
-    q: "Artificial intelligence has the potential ______ the way people work by automating repetitive tasks and improving productivity.",
-    a: ["changing", "change", "changed", "to change"],
+    q: "The company invested heavily in advanced laboratories and researcher training, hoping that these efforts would ______ future scientific breakthroughs.",
+    a: ["downplay", "exacerbate", "facilitate", "overlook"],
+    c: 2
+  },
+  {
+    q: "Despite analysts' optimistic forecasts, the expected technological revolution failed to ______ because the necessary infrastructure was never completed.",
+    a: ["resonate with", "materialize", "cultivate", "reinforce"],
+    c: 1
+  },
+  {
+    q: "When designing a mobile application, developers must consider several technical ______, including limited screen size, battery capacity, and processing power.",
+    a: ["innovations", "advantages", "adjustments", "constraints"],
     c: 3
   },
   {
-    q: "The multinational corporation hired an experienced financial ______ to examine its annual reports and identify potential investment risks.",
-    a: ["analysis", "analyst", "analyse", "analytical"],
+    q: "The shopping app displayed dozens of advertisements, animated banners, and overlapping buttons on a single screen. This excessive ______ made it difficult for users to find the checkout button.",
+    a: ["visual hierarchy", "visual clutter", "navigation", "responsiveness"],
     c: 1
   },
   {
-    q: "Before introducing the new education policy, the researchers decided to perform a detailed ______ of students' learning habits and academic performance.",
-    a: ["analyst", "analyse", "analysis", "analytical"],
+    q: "The website was redesigned with larger buttons and simpler menus so that elderly users could ______ through its different sections more easily.",
+    a: ["interpret", "evaluate", "navigate", "retrieve"],
     c: 2
   },
   {
-    q: "Online learning platforms are particularly ______ to students living in remote areas because they provide access to educational resources without requiring long-distance travel.",
-    a: ["beneficial", "beneficiary", "benefactor", "benefit"],
+    q: "The team removed several ______ features that duplicated existing functions and added no practical value to the application.",
+    a: ["redundant", "essential", "compact", "touch-based"],
     c: 0
   },
   {
-    q: "The success of the community project is a clear ______ of how effective teamwork can help solve serious environmental problems.",
-    a: ["exemplary", "exemplify", "exemplification", "exemplified"],
-    c: 2
-  },
-  {
-    q: "A good leader should lead ______ by demonstrating responsibility, honesty and dedication rather than simply telling employees what to do.",
-    a: ["in quality", "by example", "under guidance", "with potential"],
+    q: "To reduce the amount of storage required by thousands of high-resolution photographs, the developers introduced a new image ______ technique.",
+    a: ["optimisation", "compression", "adjustment", "innovation"],
     c: 1
   },
   {
-    q: "When reporting problems with the new computer system, employees are expected to be ______ about the errors they have encountered so that technicians can identify and fix them quickly.",
-    a: ["specification", "specify", "specifically", "specific"],
+    q: "The engineer tested the prototype repeatedly, identified minor design flaws, and made small improvements to ______ its performance before the final release.",
+    a: ["accommodate", "sideline", "replace", "refine"],
     c: 3
   },
   {
-    q: "To make the university admission process more convenient, the government has introduced an online ______ system that allows students to submit their documents electronically.",
-    a: ["application", "applicant", "appliance", "applicable"],
-    c: 0
-  },
-  {
-    q: "Although the teacher's comments were intended to help her improve, the student took them ______ and felt that she was being unfairly criticised.",
-    a: ["personally", "specifically", "effortlessly", "beneficially"],
-    c: 0
-  },
-  {
-    q: "The science museum organised an ______ workshop in which students could interact with robots, experiment with new technologies and learn about artificial intelligence.",
-    a: ["engaged", "engaging", "engagement", "engage"],
-    c: 1
-  },
-  {
-    q: "Before purchasing a new gaming laptop, customers should carefully examine its technical ______, including the processor, memory capacity and graphics card.",
-    a: ["qualifications", "applications", "specifications", "exemplifications"],
+    q: "The application automatically rearranges its menus and images to fit phones, tablets, and desktop screens. This is an example of ______.",
+    a: ["selective exposure", "gesture-based interaction", "adaptive design", "cognitive effort"],
     c: 2
   },
   {
-    q: "After dating for five years, the couple finally decided to get ______ to each other and announced their wedding plans to their families.",
-    a: ["engaged", "engaging", "engagement", "engage"],
+    q: "A user follows only news sources that support her political opinions and immediately dismisses evidence that challenges them. This behaviour illustrates ______.",
+    a: ["confirmation bias", "digital literacy", "open-mindedness", "credibility"],
     c: 0
   },
   {
-    q: "After several months of training, the young athlete finally ______ for the national swimming championship by achieving the required qualifying time.",
-    a: ["specified", "qualified", "exemplified", "disqualified"],
+    q: "The social media platform repeatedly recommends content that agrees with users' existing beliefs, creating an ______ in which they rarely encounter opposing views.",
+    a: ["interface", "echo chamber", "obstacle", "newsroom"],
     c: 1
   },
   {
-    q: "The young researcher managed to complete the complicated data-processing task almost ______ because she had developed an efficient computer program to automate most of the calculations.",
-    a: ["effort", "effortless", "effortlessly", "effortlessness"],
+    q: "The algorithm continuously recommends similar content based on users' previous clicks. Those recommendations then influence future clicks, creating a self-reinforcing ______.",
+    a: ["gold rush", "visual hierarchy", "feedback loop", "public discourse"],
     c: 2
   },
   {
-    q: "The educational charity received a generous donation from an anonymous ______ who wanted to support children from disadvantaged backgrounds.",
-    a: ["beneficiary", "benefactor", "applicant", "analyst"],
+    q: "Instead of presenting the full extent of the environmental disaster, the company's spokesperson tried to ______ its seriousness, describing the widespread contamination as a minor inconvenience.",
+    a: ["verify", "amplify", "exacerbate", "downplay"],
+    c: 3
+  },
+  {
+    q: "The two scientific teams reached very different conclusions because they relied on completely ______ datasets collected using incompatible methods.",
+    a: ["comprehensive", "disparate", "credible", "first-hand"],
     c: 1
   },
   {
-    q: "The young volunteer received a national award for her exemplary behaviour and outstanding dedication to community service. The word 'exemplary' is CLOSEST in meaning to ______.",
-    a: ["outstanding", "potential", "unqualified", "effortless"],
+    q: "The educational campaign encourages young people to examine multiple viewpoints and question their own assumptions rather than accept information blindly. Its main goal is to ______ critical thinking.",
+    a: ["impede", "contradict", "foster", "sideline"],
+    c: 2
+  },
+  {
+    q: "The fake news story intensified existing hostility between the two communities, making an already serious conflict much worse. It clearly served to ______ social divisions.",
+    a: ["exacerbate", "cultivate", "compensate for", "eliminate"],
     c: 0
   },
   {
-    q: "The hospital is looking for qualified medical personnel who possess the necessary professional skills and experience to provide safe patient care. The word 'qualified' is OPPOSITE in meaning to ______.",
-    a: ["experienced", "competent", "unqualified", "exemplary"],
+    q: "The newspaper received an extraordinary volume of reader submissions—more than one million in a single day, far exceeding anything in its previous 100-year history. Editors described this response as ______.",
+    a: ["excessive", "subtle", "unprecedented", "relentless"],
     c: 2
   },
   {
-    q: "The teacher asked each student to choose one particular environmental problem and explain its causes and possible solutions in detail. The word 'particular' is CLOSEST in meaning to ______.",
-    a: ["personal", "specific", "potential", "beneficial"],
+    q: "Rather than creating an entirely separate system, the newspaper decided to ______ AI tools into its existing editorial workflow.",
+    a: ["integrate", "reject", "separate", "replace"],
+    c: 0
+  },
+  {
+    q: "To verify the politician's statement, the journalist needed to ______ official financial records from the government's online database.",
+    a: ["circulate", "cultivate", "weaponise", "retrieve"],
+    c: 3
+  },
+  {
+    q: "Although the article contained many technical details, its arguments were logically connected and easy to follow. The editor praised it as a highly ______ piece of writing.",
+    a: ["sensational", "coherent", "fragmented", "inflated"],
     c: 1
   },
   {
-    q: "The lecturer used several real-life examples to illustrate how artificial intelligence can improve the efficiency of modern transportation systems. The word 'illustrate' is CLOSEST in meaning to ______.",
-    a: ["specify", "analyse", "exemplify", "qualify"],
-    c: 2
+    q: "The reporter spent six months examining confidential documents, interviewing whistleblowers, and uncovering evidence of corruption that officials had tried to conceal. This is a classic example of ______.",
+    a: ["investigative journalism", "content distribution", "algorithmic tailoring", "image compression"],
+    c: 0
   },
   {
-    q: "Learning how to use artificial intelligence tools can be advantageous to students because these tools help them organise information, save time and improve their research skills. The word 'advantageous' is CLOSEST in meaning to ______.",
-    a: ["beneficial", "personal", "engaging", "specific"],
-    c: 0
+    q: "Even with advanced AI systems, experienced human editors remain ______ when decisions require ethical judgment, careful source verification, and an understanding of complex social contexts.",
+    a: ["elusive", "dubious", "catastrophic", "indispensable"],
+    c: 3
+  },
+  {
+    q: "The news website looked impressive, with beautiful graphics and smooth animations. However, its articles contained numerous factual errors. Attractive presentation cannot ______ inaccurate reporting.",
+    a: ["take root", "compensate for", "prevail over", "tip the scales"],
+    c: 1
   }
 ];
 
