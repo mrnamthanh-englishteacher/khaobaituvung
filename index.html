@@ -148,179 +148,154 @@ function shuffle(arr){
 // 📚 DATA
 let originalQuestions = [
  {
-    q: "During the floods, several completely invented rescue stories spread online. Investigators later confirmed that the stories were deliberately ______ and had no basis in reality.",
-    a: ["unverified", "fabricated", "curated", "coherent"],
+    q: "Despite receiving numerous complaints about unsafe working conditions, the company's management failed to ______ stricter safety regulations until a serious accident occurred.",
+    a: ["accumulate", "implement", "diagnose", "originate"],
     c: 1
   },
   {
-    q: "The government launched a nationwide campaign to ______ websites that deliberately spread dangerous misinformation, imposing penalties on those responsible.",
-    a: ["feed on", "rally around", "crack down on", "pave the way for"],
-    c: 2
-  },
-  {
-    q: "During the emergency, constant rumours and misleading posts began to ______ public confidence in official rescue announcements, gradually weakening people's trust.",
-    a: ["chip away at", "lay the groundwork for", "prevail over", "go hand in hand with"],
-    c: 0
-  },
-  {
-    q: "The mayor's speech was completely inaudible because the protesters' loud chanting managed to ______ his voice.",
-    a: ["sideline", "twist", "amplify", "drown out"],
+    q: "The investigation revealed that the conflict had ______ considerably over the previous six months, with minor disagreements developing into violent confrontations.",
+    a: ["diminished", "fluctuated", "alleviated", "intensified"],
     c: 3
   },
   {
-    q: "Even after repeated setbacks, the charity refused to ______; volunteers continued their relief work until every affected family had received assistance.",
-    a: ["throw in the towel", "throw it off balance", "turn a blind eye to", "take root"],
+    q: "The sudden collapse of the banking system caused public confidence to ______ sharply, leaving many investors unwilling to deposit their savings.",
+    a: ["diminish", "accumulate", "engender", "augment"],
     c: 0
   },
   {
-    q: "The fake advertisement promised instant wealth and displayed impressive-looking but meaningless statistics. Experts described the presentation as pure ______ intended to deceive investors.",
-    a: ["public discourse", "collateral damage", "smoke and mirrors", "fact-checking"],
+    q: "The coastal region is ______ diverse marine life, including several endangered species that cannot be found anywhere else in the world.",
+    a: ["rooted in", "engaged in", "teeming with", "derived from"],
     c: 2
   },
   {
-    q: "After several weeks of public education and coordinated action, accurate information finally began to replace false rumours, helping authorities ______ in the battle against misinformation.",
-    a: ["spiral out of control", "turn the tide", "slip through their fingers", "weed out"],
+    q: "Having grown tired of the constant ______ of city life, the couple moved to a remote village where they could enjoy peace and quiet.",
+    a: ["proximity", "hustle and bustle", "implementation", "emergence"],
     c: 1
   },
   {
-    q: "Following the announcement of a revolutionary AI chip, the company's share price increased by more than 300% in just two days. Its value appeared to ______ overnight.",
-    a: ["tumble", "materialize", "skyrocket", "outpace"],
-    c: 2
-  },
-  {
-    q: "Although the startup initially attracted huge investment, it soon struggled to pay its employees and operating expenses. Without emergency funding, it would be unable to ______.",
-    a: ["keep afloat", "double down on", "lock horns over", "kick into high gear"],
+    q: "The charity encourages university students to ______ voluntary activities that provide educational support for disadvantaged children.",
+    a: ["engage in", "originate from", "compensate for", "fluctuate with"],
     c: 0
   },
   {
-    q: "After spending billions on experimental AI systems without producing any commercially successful products, investors began questioning the project's long-term ______.",
-    a: ["rivalry", "valuation", "projection", "profitability"],
+    q: "The new digital platform allows hospitals to ______ patients' medical records from different departments into a single, accessible database.",
+    a: ["displace", "prescribe", "aggravate", "integrate"],
     c: 3
   },
   {
-    q: "Although competitors had already abandoned similar projects, the researchers refused to ______ and continued working until they achieved a breakthrough.",
-    a: ["run out of steam", "throw in the towel", "pick up the pieces", "strike a delicate balance"],
-    c: 1
-  },
-  {
-    q: "The two technology giants have repeatedly ______ control of the global semiconductor market, with each trying to secure exclusive supply agreements.",
-    a: ["locked horns over", "rallied around", "laid the groundwork for", "remained confined to"],
-    c: 0
-  },
-  {
-    q: "The company invested heavily in advanced laboratories and researcher training, hoping that these efforts would ______ future scientific breakthroughs.",
-    a: ["downplay", "exacerbate", "facilitate", "overlook"],
+    q: "The government's announcement of unexpectedly severe restrictions ______ widespread concern among small business owners who feared losing their livelihoods.",
+    a: ["compensated", "curated", "engendered", "diminished"],
     c: 2
   },
   {
-    q: "Despite analysts' optimistic forecasts, the expected technological revolution failed to ______ because the necessary infrastructure was never completed.",
-    a: ["resonate with", "materialize", "cultivate", "reinforce"],
+    q: "______ , the introduction of advanced communication technologies has left some individuals feeling more socially isolated despite being constantly connected online.",
+    a: ["Consistently", "Paradoxically", "Spontaneously", "Superficially"],
     c: 1
   },
   {
-    q: "When designing a mobile application, developers must consider several technical ______, including limited screen size, battery capacity, and processing power.",
-    a: ["innovations", "advantages", "adjustments", "constraints"],
+    q: "The company's financial report provided only a ______ explanation of its declining profits, failing to examine the underlying causes or offer supporting evidence.",
+    a: ["superficial", "sophisticated", "complementary", "optimal"],
+    c: 0
+  },
+  {
+    q: "Although the doctor initially suspected a common respiratory infection, further laboratory tests were necessary to ______ the patient's rare autoimmune disorder accurately.",
+    a: ["appoint", "prescribe", "deploy", "diagnose"],
     c: 3
   },
   {
-    q: "The shopping app displayed dozens of advertisements, animated banners, and overlapping buttons on a single screen. This excessive ______ made it difficult for users to find the checkout button.",
-    a: ["visual hierarchy", "visual clutter", "navigation", "responsiveness"],
+    q: "After reviewing the patient's medical history, the physician issued a ______ specifying the exact dosage and duration of the required medication.",
+    a: ["diagnosis", "prescription", "compensation", "implementation"],
     c: 1
   },
   {
-    q: "The website was redesigned with larger buttons and simpler menus so that elderly users could ______ through its different sections more easily.",
-    a: ["interpret", "evaluate", "navigate", "retrieve"],
+    q: "The manager expressed concern about the team's ______ of technical expertise, particularly its inability to operate recently installed manufacturing equipment.",
+    a: ["gains", "proximity", "lack", "consistency"],
     c: 2
   },
   {
-    q: "The team removed several ______ features that duplicated existing functions and added no practical value to the application.",
-    a: ["redundant", "essential", "compact", "touch-based"],
+    q: "The researchers observed an ______ increase in temperature within the experimental chamber, even though all heating equipment had been switched off.",
+    a: ["anomalous", "optimal", "intimate", "ethical"],
     c: 0
   },
   {
-    q: "To reduce the amount of storage required by thousands of high-resolution photographs, the developers introduced a new image ______ technique.",
-    a: ["optimisation", "compression", "adjustment", "innovation"],
-    c: 1
-  },
-  {
-    q: "The engineer tested the prototype repeatedly, identified minor design flaws, and made small improvements to ______ its performance before the final release.",
-    a: ["accommodate", "sideline", "replace", "refine"],
+    q: "Rather than relying on outdated procedures, the company introduced a series of automated systems to ______ energy consumption and minimise unnecessary waste.",
+    a: ["intensify", "displace", "accumulate", "optimize"],
     c: 3
   },
   {
-    q: "The application automatically rearranges its menus and images to fit phones, tablets, and desktop screens. This is an example of ______.",
-    a: ["selective exposure", "gesture-based interaction", "adaptive design", "cognitive effort"],
-    c: 2
-  },
-  {
-    q: "A user follows only news sources that support her political opinions and immediately dismisses evidence that challenges them. This behaviour illustrates ______.",
-    a: ["confirmation bias", "digital literacy", "open-mindedness", "credibility"],
-    c: 0
-  },
-  {
-    q: "The social media platform repeatedly recommends content that agrees with users' existing beliefs, creating an ______ in which they rarely encounter opposing views.",
-    a: ["interface", "echo chamber", "obstacle", "newsroom"],
+    q: "Following a detailed evaluation of all available treatment methods, the medical team selected the ______ approach, balancing effectiveness, patient safety, and recovery time.",
+    a: ["spontaneous", "optimal", "mortal", "superficial"],
     c: 1
   },
   {
-    q: "The algorithm continuously recommends similar content based on users' previous clicks. Those recommendations then influence future clicks, creating a self-reinforcing ______.",
-    a: ["gold rush", "visual hierarchy", "feedback loop", "public discourse"],
+    q: "The university invited an ______ physicist, internationally recognised for her pioneering research in quantum mechanics, to deliver the opening lecture.",
+    a: ["elusive", "integrated", "eminent", "acute"],
     c: 2
   },
   {
-    q: "Instead of presenting the full extent of the environmental disaster, the company's spokesperson tried to ______ its seriousness, describing the widespread contamination as a minor inconvenience.",
-    a: ["verify", "amplify", "exacerbate", "downplay"],
+    q: "The international conference attracted several ______ environmental activists whose campaigns had significantly influenced climate policy around the world.",
+    a: ["prominent", "mortal", "complicated", "complementary"],
+    c: 0
+  },
+  {
+    q: "Because the children's performance had not been rehearsed or planned in advance, their cheerful dancing was entirely ______.",
+    a: ["consistent", "intensified", "integrated", "spontaneous"],
     c: 3
   },
   {
-    q: "The two scientific teams reached very different conclusions because they relied on completely ______ datasets collected using incompatible methods.",
-    a: ["comprehensive", "disparate", "credible", "first-hand"],
+    q: "The accountant discovered that several employees had been using a ______ system of overlapping spreadsheets, making even simple financial calculations unnecessarily difficult.",
+    a: ["optimal", "complicated", "intimate", "complementary"],
     c: 1
   },
   {
-    q: "The educational campaign encourages young people to examine multiple viewpoints and question their own assumptions rather than accept information blindly. Its main goal is to ______ critical thinking.",
-    a: ["impede", "contradict", "foster", "sideline"],
+    q: "The programme was designed to help farmers ______ sufficient financial reserves during profitable seasons so that they could survive periods of drought.",
+    a: ["fluctuate", "diminish", "accumulate", "displace"],
     c: 2
   },
   {
-    q: "The fake news story intensified existing hostility between the two communities, making an already serious conflict much worse. It clearly served to ______ social divisions.",
-    a: ["exacerbate", "cultivate", "compensate for", "eliminate"],
+    q: "The new research facility provides temporary ______ for scientists visiting from overseas, including furnished apartments located within walking distance of the laboratories.",
+    a: ["accommodation", "prescription", "compensation", "detachment"],
     c: 0
   },
   {
-    q: "The newspaper received an extraordinary volume of reader submissions—more than one million in a single day, far exceeding anything in its previous 100-year history. Editors described this response as ______.",
-    a: ["excessive", "subtle", "unprecedented", "relentless"],
+    q: "The rapid expansion of the ______ has allowed many workers to earn money through short-term freelance contracts rather than traditional permanent employment.",
+    a: ["proximity", "gig economy", "hustle and bustle", "implementation"],
+    c: 1
+  },
+  {
+    q: "The psychologist suggested that the patient's emotional ______ from close friends and family had developed gradually after years of working alone in a foreign country.",
+    a: ["emergence", "augmentation", "proximity", "detachment"],
+    c: 3
+  },
+  {
+    q: "The two researchers developed an unusually ______ working relationship, sharing personal experiences and discussing sensitive matters that they rarely revealed to other colleagues.",
+    a: ["mortal", "superficial", "intimate", "elusive"],
     c: 2
   },
   {
-    q: "Rather than creating an entirely separate system, the newspaper decided to ______ AI tools into its existing editorial workflow.",
-    a: ["integrate", "reject", "separate", "replace"],
+    q: "The scientist refused to conduct experiments on human participants without their informed consent, arguing that such research would violate fundamental ______ principles.",
+    a: ["ethical", "mortal", "spontaneous", "complementary"],
     c: 0
   },
   {
-    q: "To verify the politician's statement, the journalist needed to ______ official financial records from the government's online database.",
-    a: ["circulate", "cultivate", "weaponise", "retrieve"],
+    q: "According to the ancient legend, the warriors were ordinary ______ beings who could be injured or killed, despite their extraordinary physical strength.",
+    a: ["eminent", "optimal", "consistent", "mortal"],
     c: 3
   },
   {
-    q: "Although the article contained many technical details, its arguments were logically connected and easy to follow. The editor praised it as a highly ______ piece of writing.",
-    a: ["sensational", "coherent", "fragmented", "inflated"],
+    q: "Many traditional Vietnamese festivals ______ ancient agricultural rituals that were practised long before the development of modern religious institutions.",
+    a: ["compensate for", "stem from", "engage in", "fluctuate with"],
     c: 1
   },
   {
-    q: "The reporter spent six months examining confidential documents, interviewing whistleblowers, and uncovering evidence of corruption that officials had tried to conceal. This is a classic example of ______.",
-    a: ["investigative journalism", "content distribution", "algorithmic tailoring", "image compression"],
+    q: "The researchers examined a medicinal substance ______ the roots of a rare tropical plant, rather than synthesised entirely from artificial chemicals.",
+    a: ["engaged in", "compensated for", "derived from", "appointed to"],
+    c: 2
+  },
+  {
+    q: "The university's scholarship committee evaluates applicants solely on academic merit and demonstrated financial need, ______ their nationality or family background.",
+    a: ["irrespective of", "originating from", "engaged in", "stemming from"],
     c: 0
-  },
-  {
-    q: "Even with advanced AI systems, experienced human editors remain ______ when decisions require ethical judgment, careful source verification, and an understanding of complex social contexts.",
-    a: ["elusive", "dubious", "catastrophic", "indispensable"],
-    c: 3
-  },
-  {
-    q: "The news website looked impressive, with beautiful graphics and smooth animations. However, its articles contained numerous factual errors. Attractive presentation cannot ______ inaccurate reporting.",
-    a: ["take root", "compensate for", "prevail over", "tip the scales"],
-    c: 1
   }
 ];
 
