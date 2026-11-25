@@ -119,7 +119,7 @@ button{
 <div id="result"></div>
 
 <h3>🏆 Bảng xếp hạng</h3>
-<div id="leaderboard"></divầy 
+<div id="leaderboard"></div> 
 </div>
 
 <script>
@@ -148,164 +148,165 @@ function shuffle(arr){
 // 📚 DATA
 let originalQuestions = [
 {
-    q: "The government hopes that lower taxes will ______ economic growth and encourage businesses to invest more money.",
-    a: ["diagnose", "displace", "boost", "prescribe"],
-    c: 2
+    question: "Climate change is a global ______ that affects people in almost every country.",
+    options: ["attachment", "phenomenon", "accomplishment", "preference"],
+    answer: 1
   },
   {
-    q: "The hotel was comfortable, ______ a little expensive for students travelling on a limited budget.",
-    a: ["regardless", "albeit", "whose", "despite"],
-    c: 1
+    question: "Winning the national English competition was a great ______ for the young student.",
+    options: ["dependency", "withdrawal", "vulnerability", "accomplishment"],
+    answer: 3
   },
   {
-    q: "The scientist noticed an unusual result that was very different from all the other measurements. He decided to investigate this ______.",
-    a: ["accommodation", "implementation", "prescription", "anomaly"],
-    c: 3
+    question: "Using your phone late at night can ______ your sleep and make you feel tired the next morning.",
+    options: ["interfere with", "excel at", "align with", "engage with"],
+    answer: 0
   },
   {
-    q: "The teacher spoke to a student ______ parents had recently moved to another city.",
-    a: ["whose", "whom", "which", "where"],
-    c: 0
+    question: "Good ______ help employees communicate effectively and build positive relationships with their colleagues.",
+    options: ["digital habits", "personal beliefs", "interpersonal skills", "social withdrawal"],
+    answer: 2
   },
   {
-    q: "The school bought ten new computers, all of ______ were installed in the computer room.",
-    a: ["whom", "whose", "which", "where"],
-    c: 2
+    question: "The company's new environmental policy should ______ its commitment to protecting nature.",
+    options: ["interfere with", "align with", "break down", "run down"],
+    answer: 1
   },
   {
-    q: "The hospital uses an ______ computer system that connects patient records from different departments.",
-    a: ["integrated", "mortal", "intimate", "elusive"],
-    c: 0
+    question: "Some people try to ______ others by giving them excessive compliments to gain their support.",
+    options: ["flatter", "monitor", "preserve", "verify"],
+    answer: 0
   },
   {
-    q: "After several months of hard work, the company finally reported significant financial ______.",
-    a: ["prescriptions", "gains", "anomalies", "constraints"],
-    c: 1
+    question: "Driving at high speed in heavy rain can ______ to both drivers and pedestrians.",
+    options: ["take responsibility", "make an effort", "gain proficiency", "pose a risk"],
+    answer: 3
   },
   {
-    q: "The army decided to ______ more soldiers to the flooded area to help rescue local residents.",
-    a: ["curate", "diagnose", "diminish", "deploy"],
-    c: 3
+    question: "The teacher was very ______ and understood how difficult the situation was for her students.",
+    options: ["excessive", "intricate", "empathetic", "ambiguous"],
+    answer: 2
   },
   {
-    q: "Constant criticism from parents can sometimes ______ feelings of anxiety and insecurity in young children.",
-    a: ["compensate", "optimize", "engender", "alleviate"],
-    c: 2
+    question: "The school decided to ______ its teaching methods to meet the individual needs of students.",
+    options: ["tailor", "dominate", "mimic", "hinder"],
+    answer: 0
   },
   {
-    q: "You should avoid running with an injured knee because it may ______ the injury and make the pain worse.",
-    a: ["aggravate", "integrate", "accumulate", "augment"],
-    c: 0
+    question: "Young children often ______ the sounds and actions of their parents as a way of learning.",
+    options: ["curtail", "delegate", "reinforce", "mimic"],
+    answer: 3
   },
   {
-    q: "The school hired five additional teachers to ______ its teaching staff before the new school year began.",
-    a: ["displace", "fluctuate", "originate", "augment"],
-    c: 3
+    question: "The growing ______ on smartphones has made it difficult for some people to remember information independently.",
+    options: ["autonomy", "dependency", "integrity", "authenticity"],
+    answer: 1
   },
   {
-    q: "The company plans to open more stores next year. This ______ will create hundreds of new jobs.",
-    a: ["detachment", "expansion", "proximity", "prescription"],
-    c: 1
+    question: "Students should be given more ______ so that they can make their own decisions about how to learn.",
+    options: ["manipulation", "vulnerability", "autonomy", "perception"],
+    answer: 2
   },
   {
-    q: "Many students experienced stress ______ the pressure to achieve high examination scores.",
-    a: ["appointed to", "engaged in", "stemming from", "compensated for"],
-    c: 2
+    question: "The campaign aims to raise public ______ of the dangers of plastic pollution.",
+    options: ["awareness", "retention", "proficiency", "consolidation"],
+    answer: 0
   },
   {
-    q: "The museum displays traditional clothes ______ different regions of Vietnam.",
-    a: ["originating from", "engaging in", "fluctuating with", "compensating for"],
-    c: 0
+    question: "The manager decided to ______ some of her duties to other team members because she was too busy.",
+    options: ["encounter", "alter", "preserve", "delegate"],
+    answer: 3
   },
   {
-    q: "Her success is ______ years of hard work, patience and strong determination.",
-    a: ["engaged in", "traced back to", "compensated for", "rooted in"],
-    c: 3
+    question: "Our car suddenly stopped working on the way to school. It had ______.",
+    options: ["taken over", "broken down", "aligned with", "excelled at"],
+    answer: 1
   },
   {
-    q: "The ancient temple can ______ the fifteenth century, when it was first built by local villagers.",
-    a: ["engage in", "be traced back to", "compensate for", "fluctuate with"],
-    c: 1
+    question: "The government has introduced new measures to ______ the country's historical buildings for future generations.",
+    options: ["diminish", "bypass", "preserve", "dominate"],
+    answer: 2
   },
   {
-    q: "The company bought faster machines to ______ production and finish customer orders more quickly.",
-    a: ["aggravate", "displace", "accelerate", "diagnose"],
-    c: 2
+    question: "People who do not get enough sleep are more ______ making mistakes at work.",
+    options: ["devoid of", "associated with", "responsible for", "prone to"],
+    answer: 3
   },
   {
-    q: "The school offers three main subjects, ______, Mathematics, English and Science.",
-    a: ["i.e.", "albeit", "whose", "regardless of"],
-    c: 0
+    question: "Advertising can influence consumers' ______ of a product, making it appear more attractive than it really is.",
+    options: ["perception", "autonomy", "proficiency", "retention"],
+    answer: 0
   },
   {
-    q: "As the storm moved closer to the coast, the strong winds began to ______, making it dangerous for people to go outside.",
-    a: ["diminish", "compensate", "curate", "intensify"],
-    c: 3
+    question: "The success or failure of the project will depend on its final ______.",
+    options: ["jurisdiction", "discourse", "outcome", "curation"],
+    answer: 2
   },
   {
-    q: "The patient was taken to hospital immediately because he was suffering from ______ chest pain and had difficulty breathing.",
-    a: ["intimate", "acute", "ethical", "optimal"],
-    c: 1
+    question: "The hospital uses highly ______ medical equipment that can detect diseases at an early stage.",
+    options: ["moderate", "sophisticated", "genuine", "universal"],
+    answer: 1
   },
   {
-    q: "The changes in her voice were so ______ that most people did not notice them.",
-    a: ["mortal", "spontaneous", "subtle", "prominent"],
-    c: 2
+    question: "Regular revision helps ______ what students have already learned in class.",
+    options: ["curtail", "hinder", "diminish", "reinforce"],
+    answer: 3
   },
   {
-    q: "The loud explosion ______ panic among the people nearby, causing many of them to run away.",
-    a: ["triggered", "curated", "optimized", "compensated"],
-    c: 0
+    question: "A good journalist should report facts objectively and avoid personal ______.",
+    options: ["bias", "autonomy", "proficiency", "cohesion"],
+    answer: 0
   },
   {
-    q: "The school organised a sports competition to ______ students to exercise more regularly.",
-    a: ["diminish", "displace", "aggravate", "encourage"],
-    c: 3
+    question: "Social media sometimes makes it difficult to ______ reliable information ______ false information.",
+    options: ["associate - with", "depend - on", "distinguish - from", "interfere - with"],
+    answer: 2
   },
   {
-    q: "The fire did not ______ in the kitchen. Investigators discovered that it had started in the storage room.",
-    a: ["integrate", "originate", "compensate", "fluctuate"],
-    c: 1
+    question: "Only ______ students attended the extra class because most of them were on holiday.",
+    options: ["an excessive number of", "a handful of", "a vast number of", "a large number of"],
+    answer: 1
   },
   {
-    q: "The teacher asked students to ______ the best photograph from a collection of twenty pictures for the school exhibition.",
-    a: ["escalate", "prescribe", "carefully select", "displace"],
-    c: 2
+    question: "Although she failed several times, she continued to ______ success and never gave up.",
+    options: ["strive for", "interfere with", "be devoid of", "break down"],
+    answer: 0
   },
   {
-    q: "All students are welcome to join the English club, ______ their age or English level.",
-    a: ["regardless of", "derived from", "stemming from", "engaged in"],
-    c: 0
+    question: "Doctors warn that ______ consumption of sugary drinks can lead to serious health problems.",
+    options: ["moderate", "genuine", "ambiguous", "excessive"],
+    answer: 3
   },
   {
-    q: "He studies English for thirty minutes every day and follows the same routine. He has been remarkably ______ in his learning.",
-    a: ["superficial", "spontaneous", "paradoxical", "consistent"],
-    c: 3
+    question: "Many young readers can ______ the main character because they have experienced similar problems in their own lives.",
+    options: ["run down", "take over", "relate to", "pose a risk to"],
+    answer: 2
   },
   {
-    q: "Reading and listening are ______ skills. Practising both can help students understand English better.",
-    a: ["mortal", "complementary", "elusive", "acute"],
-    c: 1
+    question: "Before sharing a news story online, you should ______ the information to make sure it is accurate.",
+    options: ["mimic", "verify", "flatter", "dominate"],
+    answer: 1
   },
   {
-    q: "Eating too much sugary food can ______ existing dental problems and cause further damage to your teeth.",
-    a: ["alleviate", "compensate for", "worsen", "optimize"],
-    c: 2
+    question: "The instructions were ______, so students were unsure about what they were supposed to do.",
+    options: ["ambiguous", "distinct", "genuine", "meticulous"],
+    answer: 0
   },
   {
-    q: "After practising English every day for six months, she made impressive ______ in her speaking ability.",
-    a: ["gains", "anomalies", "proximity", "detachment"],
-    c: 0
+    question: "The company promotes ______ by making its financial reports available to the public.",
+    options: ["dependency", "manipulation", "vulnerability", "transparency"],
+    answer: 3
   }
-];
+]
+;
 
 
 // 🔀 RANDOM CÂU + ĐÁP ÁN
 let questions = shuffle(originalQuestions.map(q=>{
-  let opts = q.a.map((t,i)=>({t,correct:i===q.c}));
+  let opts = q.options.map((t,i)=>({t,correct:i===q.answer}));
   opts = shuffle(opts);
   return {
-    q:q.q,
+    q:q.question,
     a:opts.map(o=>o.t),
     c:opts.findIndex(o=>o.correct)
   };
